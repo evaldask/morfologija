@@ -1,0 +1,1408 @@
+- type: symbol
+  key: nom
+  label: Vardininkas
+
+- type: symbol
+  key: gen
+  label: Kilmininkas
+
+- type: symbol
+  key: dat
+  label: Naudininkas
+
+- type: symbol
+  key: acc
+  label: Galininkas
+
+- type: symbol
+  key: ins
+  label: Įnagininkas
+
+- type: symbol
+  key: loc
+  label: Vietininkas
+
+- type: symbol
+  key: voc
+  label: Šauksmininkas
+
+- type: symbol
+  kind: gender
+  key: m
+  name: masculine
+  label: Vyriška giminė
+
+- type: symbol
+  kind: gender
+  key: f
+  name: feminine
+  label: Moteriška giminė
+
+- type: symbol
+  kind: gender
+  key: nt
+  name: neuter
+  label: Neutrali giminė
+
+- type: symbol
+  kind: gender
+  key: nt
+  name: neuter
+  label: Neutrali giminė
+
+- type: symbol
+  key: sg
+  label: Vienaskaita
+
+- type: symbol
+  key: pl
+  label: Daugiskaita
+
+- type: symbols
+  key: case
+  label: Linksniai
+  symbols:
+  - nom
+  - gen
+  - dat
+  - acc
+  - ins
+  - loc
+  - voc
+
+
+# 1 paradigma
+
+- key: vyr/as
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - as
+      - o
+      - ui
+      - ą
+      - u
+      - e
+      - [e, ai]
+
+- key: Jon/as
+  extends:
+  - keys: vyr/as
+    replace:
+      suffixes:
+        case:
+          voc: ai
+
+- key: vyr/ai
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ai
+      - ų
+      - ams
+      - us
+      - ais
+      - uose
+
+
+# 2 paradigma
+
+- type: suffixes
+  key: vėj/as
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - as
+      - o
+      - ui
+      - ą
+      - u
+      - [uje, yje]
+      - i
+
+- key: eln/ias
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ias
+      - io
+      - iui
+      - ią
+      - iu
+      - yje
+      - [i, y]
+
+- key: eln/iai
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - iai
+      - ių
+      - iams
+      - ius
+      - iais
+      - iuose
+
+
+# 3 paradigma
+
+- type: suffixes
+  key: brol/is
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - is
+      - io
+      - iui
+      - į
+      - iu
+      - yje
+      - i
+
+- key: arkl/ys
+  extends:
+  - keys: brol/is
+    replace:
+      suffixes:
+        case:
+          nom: ys
+          voc: y
+
+
+# 4 paradigma
+
+- key: turg/us
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - us
+      - aus
+      - ui
+      - ų
+      - umi
+      - uje
+      - au
+
+- key: turg/ūs
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ūs
+      - ų
+      - ums
+      - us
+      - umis
+      - uose
+
+
+# 5 paradigma
+
+- key: koridor/ius
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ius
+      - iaus
+      - iui
+      - ių
+      - iumi
+      - iuje
+      - iau
+
+
+# 6 paradigma
+
+- key: jūr/a
+  symbols:
+    gender: f
+    number: sg
+  define:
+    suffixes:
+      case:
+      - a
+      - os
+      - ai
+      - ą
+      - a
+      - oje
+      - a
+    optional-prefixes:
+      suffixes: i
+
+- key: jūr/os
+  symbols:
+    gender: f
+    number: pl
+  define:
+    suffixes:
+      case:
+      - os
+      - ų
+      - oms
+      - as
+      - omis
+      - ose
+    optional-prefixes:
+      suffixes: i
+
+
+- key: mart/i
+  extends:
+  - keys: jūr/a
+    prefix:
+      suffixes: i
+    replace:
+      suffixes:
+        case:
+          nom: ''
+
+- key: marč/i/os
+  extends:
+  - keys: jūr/os
+    prefix:
+      suffixes: i
+
+
+# 8 paradigma
+
+- key: gerv/ė
+  symbols:
+    gender: f
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ė
+      - ės
+      - ei
+      - ę
+      - e
+      - ėje
+      - e
+
+- key: gerv/ės
+  symbols:
+    gender: f
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ės
+      - ių
+      - ėms
+      - es
+      - ėmis
+      - ėse
+
+
+- key: dėd/ės
+  symbols:
+    gender: f
+    number: pl
+  extends:
+  - keys: gerv/ės
+    replace:
+      suffixes:
+        case:
+          gen: žių
+
+
+# 9 paradigma
+
+- key: krosn/is
+  symbols:
+    gender: f
+    number: sg
+  define:
+    suffixes:
+      case:
+      - is
+      - ies
+      - iai
+      - į
+      - imi
+      - yje
+      - ie
+
+- key: krosn/ys
+  symbols:
+    gender: f
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ys
+      - ių
+      - ims
+      - is
+      - imis
+      - yse
+
+
+- key: šird/is
+  extends:
+  - keys: krosn/is
+    replace:
+      suffixes:
+        case:
+          dat: žiai
+
+- key: šird/ys
+  extends:
+  - keys: krosn/ys
+    replace:
+      suffixes:
+        case:
+          gen: žių
+
+- key: žuv/ys
+  extends:
+  - keys: krosn/ys
+    replace:
+      suffixes:
+        case:
+          gen: ų
+
+
+# 10 paradigma
+
+- key: žvėr/is
+  extends:
+  - keys: krosn/is
+    replace:
+      suffixes:
+        case:
+          dat: iui
+
+- key: žvėr/is
+  extends:
+  - keys: krosn/is
+    replace:
+      suffixes:
+        case:
+          dat: iui
+
+
+# 11 paradigma
+
+- key: akm/uo
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - uo
+      - ens
+      - eniui
+      - enį
+      - eniu
+      - enyje
+      - enie
+
+- key: akmen/ys
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ys
+      - ų
+      - ims
+      - is
+      - imis
+      - yse
+
+- key: akm/en/ys
+  extends:
+  - keys: akmen/ys
+    prefix:
+      suffixes: en
+
+
+- key: š/uo
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - uo
+      - uns
+      - uniui
+      - unį
+      - uniu
+      - unyje
+      - unie
+
+- key: š/un/ys
+  extends:
+  - keys: akmen/ys
+    prefix:
+      suffixes: un
+
+
+# 12 paradigma
+
+- key: ses/uo
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - uo
+      - ers
+      - eriai
+      - erį
+      - [erimi, eria]
+      - eryje
+      - erie
+
+- key: ses/er/ys
+  extends:
+  - keys: akmen/ys
+    prefix:
+      suffixes: er
+
+
+# 13 paradigma
+
+- key: pet/ys
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ys
+      - io
+      - iui
+      - į
+      - imi
+      - yse
+      - iai
+
+- key: peč/iai
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - iai
+      - ių
+      - [iams, iam]
+      - ius
+      - iais
+      - iuose
+
+# 15 paradigma
+
+- key: pat/s
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - s
+      - io
+      - iam
+      - į
+      - iu
+      - iame
+      - s
+
+- key: pat/ys
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ys
+      - ių
+      - [iems, iem]
+      - ius
+      - iais
+      - iuose
+
+
+# 16 paradigma
+
+- key: viešpat/s
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - s
+      - io
+      - iui
+      - į
+      - iu
+      - yje
+      - ie
+
+
+# 17 paradigma
+
+- key: mėn/uo
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - [uo, esis]
+      - esio
+      - esiui
+      - esį
+      - esiu
+      - esyje
+      - esie
+
+- key: mėn/esiai
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - esiai
+      - esių
+      - esiams
+      - esius
+      - esiais
+      - esiuose
+
+
+# 18 paradigma
+
+- key: jaun/asis
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - asis
+      - ojo
+      - ajam
+      - ąjį
+      - uoju
+      - ąjame
+      - asai
+
+- key: jaun/ieji
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ieji
+      - ųjų
+      - iesiems
+      - uosius
+      - aisiais
+      - uosiuose
+
+
+# 19 paradigma
+
+- key: pėst/ysis
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ysis
+      - iojo
+      - iajam
+      - įjį
+      - iuoju
+      - iąjame
+      - iasis
+
+- key: pėst/ieji
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ieji
+      - iųjų
+      - iesiems
+      - iuosius
+      - iaisiais
+      - iuosiuose
+
+
+# 20 paradigma
+
+- key: pažįstam/as
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - as
+      - o
+      - am
+      - ą
+      - u
+      - ame
+      - [asis, asai]
+
+- key: pažįstam/i
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - i
+      - ų
+      - iems
+      - us
+      - ais
+      - uose
+
+
+# 20 paradigma
+
+- key: suaug/ęs
+  symbols:
+    gender: m
+    number: sg
+  define:
+    suffixes:
+      case:
+      - ęs
+      - usio
+      - usiam
+      - usį
+      - usiu
+      - usiame
+      - usis
+
+- key: suaug/ę
+  symbols:
+    gender: m
+    number: pl
+  define:
+    suffixes:
+      case:
+      - ę
+      - usių
+      - usiems
+      - usus
+      - usais
+      - usuose
+
+
+# 22 paradigma
+
+- key: jaun/oji
+  symbols:
+    gender: f
+    number: sg
+  define:
+    suffixes:
+      case:
+      - oji
+      - osios
+      - ajai
+      - ąją
+      - ąja
+      - ojoje
+      - oji
+
+- key: jaun/osios
+  symbols:
+    gender: f
+    number: pl
+  define:
+    suffixes:
+      case:
+      - osios
+      - ųjų
+      - osioms
+      - ąsias
+      - [osiomis, osiom]
+      - osiose
+
+
+# 23 paradigma
+
+- key: barim/asis
+  symbols:
+    gender: f
+    number: sg
+  define:
+    suffixes:
+      case:
+      - asis
+      - osi
+      - uisi
+      - ąsi
+      - usi
+      - esi
+      - asai
+
+- key: barim/aisi
+  symbols:
+    gender: f
+    number: pl
+  define:
+    suffixes:
+      case:
+      - aisi
+      - ųsi
+      - iesiems
+      - uosius
+      - aisiais
+      - uosiuose
+
+
+# Sangražinės formos
+
+
+# Deminutyvai
+
+# -elis, DLKŽ96, § 150
+
+- key: nam/elis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: el
+
+- key: nam/eliai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: el
+
+
+- key: saul/elė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: el
+
+- key: saul/elės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: el
+
+
+# -ėlis, DLKŽ96, § 151
+
+- key: katin/ėlis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: ėl
+
+- key: katin/ėliai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: ėl
+
+
+- key: arbat/ėlė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ėl
+
+- key: arbat/ėlės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ėl
+
+
+# -(i)ukas, DLKŽ96, § 152
+
+- key: nam/ukas
+  override-symbols: false
+  extends:
+  - keys: vyr/as
+    prefix:
+      suffixes: uk
+
+- key: nam/ukai
+  override-symbols: false
+  extends:
+  - keys: vyr/ai
+    prefix:
+      suffixes: uk
+
+
+- key: saul/ukė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: uk
+
+- key: saul/ukės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: uk
+
+
+# -(i)utis, DLKŽ96, § 153
+
+- key: mešk/utis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: ut
+
+- key: mešk/učiai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: ut
+
+- key: mešk/utė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ut
+
+- key: mešk/utės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ut
+
+
+# -aitis, DLKŽ96, § 154
+
+- key: vežim/aitis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: ait
+
+- key: vežim/aičiai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: ait
+
+
+- key: obel/aitė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ait
+
+- key: obel/aitės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ait
+
+
+# -ytis, DLKŽ96, § 155
+
+- key: brol/ytis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: yt
+
+- key: brol/yčiai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: yt
+
+
+- key: saul/ytė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: yt
+
+- key: saul/ytės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: yt
+
+
+# -ulis, DLKŽ96, § 156
+
+- key: tėv/ulis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: ul
+
+- key: tėv/uliai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: ul
+
+
+- key: mot/ulė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ul
+
+- key: mot/ulės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ul
+
+
+# -užis, DLKŽ96, § 157
+
+- key: tėv/užis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: už
+
+- key: tėv/užiai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: už
+
+
+- key: mot/užė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: už
+
+- key: mot/užės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: už
+
+
+# -(i)ūkštis, DLKŽ96, § 158
+
+- key: tėv/ūkštis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: ūkšt
+
+- key: tėv/ūkščiai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: ūkšt
+
+
+- key: mot/ūkštė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ūkšt
+
+- key: mot/ūkštės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ūkšt
+
+
+# -okšnis, DLKŽ96, § 159
+
+- key: tėv/okšnis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: okšn
+
+- key: tėv/okšniai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: okšn
+
+
+- key: mot/okšnė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: okšn
+
+- key: mot/okšnės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: okšn
+
+
+# -šė, DLKŽ96, § 160
+
+- key: merg/šė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: š
+
+- key: merg/šės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: š
+
+
+# -inas, DLKŽ96, § 161
+
+- key: vaik/inas
+  override-symbols: false
+  extends:
+  - keys: vyr/as
+    prefix:
+      suffixes: in
+
+- key: vaik/inai
+  override-symbols: false
+  extends:
+  - keys: vyr/ai
+    prefix:
+      suffixes: in
+
+
+- key: merg/ina
+  override-symbols: false
+  extends:
+  - keys: jūr/a
+    prefix:
+      suffixes: in
+
+- key: merg/inos
+  override-symbols: false
+  extends:
+  - keys: jūr/os
+    prefix:
+      suffixes: in
+
+
+# -ušis, DLKŽ96, § 162
+
+
+
+# -išius, DLKŽ96, § 163
+
+
+
+# -ilis, DLKŽ96, § 164
+
+
+
+# -ėzas, DLKŽ96, § 165
+
+
+
+# -ikė; -(i)okas, DLKŽ96, § 166
+
+- key: merg/ikė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: ik
+
+- key: merg/ikės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: ik
+
+
+- key: bern/iokas
+  override-symbols: false
+  extends:
+  - keys: vyr/as
+    prefix:
+      suffixes: iok
+
+- key: bern/iokai
+  override-symbols: false
+  extends:
+  - keys: vyr/ai
+    prefix:
+      suffixes: iok
+
+- key: merg/iotė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: iot
+
+- key: merg/iotės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: iot
+
+
+# -etė, DLKŽ96, § 167
+
+- key: tank/etė
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: et
+
+- key: tank/etės
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: et
+
+
+# -utėlis; -elytis, DLKŽ96, § 168
+
+
+- key: bern/utėlis
+  override-symbols: false
+  extends:
+  - keys: brol/is
+    prefix:
+      suffixes: utėl
+
+- key: bern/utėliai
+  override-symbols: false
+  extends:
+  - keys: eln/iai
+    prefix:
+      suffixes: utėl
+
+- key: merg/utėlė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: utėl
+
+- key: merg/utėlės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: utėl
+
+
+# Ypatybių pavadinimai (vardažodžių abstraktai)
+
+# -ybė, DLKŽ96, § 214
+
+- key: brol/ybė
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: yb
+
+- key: brol/ybės
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: yb
+
+
+# -ystė, DLKŽ96, § 215
+
+- key: vaik/ystė
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: yst
+
+- key: vaik/ystės
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: yst
+
+
+# -ingas
+
+- key: mad/ingas
+  override-symbols: false
+  extends:
+  - keys: pažįstam/as
+    prefix:
+      suffixes: ing
+
+- key: mad/ingi
+  override-symbols: false
+  extends:
+  - keys: pažįstam/i
+    prefix:
+      suffixes: ing
+
+- key: mad/inga
+  override-symbols: false
+  extends:
+  - keys: jūr/a
+    prefix:
+      suffixes: ing
+
+- key: mad/ingos
+  override-symbols: false
+  extends:
+  - keys: jūr/os
+    prefix:
+      suffixes: ing
+
+
+# -iškas
+
+- key: ūk/iškas
+  override-symbols: false
+  extends:
+  - keys: pažįstam/as
+    prefix:
+      suffixes: išk
+
+- key: ūk/iški
+  override-symbols: false
+  extends:
+  - keys: pažįstam/i
+    prefix:
+      suffixes: išk
+
+- key: ūk/iška
+  override-symbols: false
+  extends:
+  - keys: jūr/a
+    prefix:
+      suffixes: išk
+
+- key: ūk/iškos
+  override-symbols: false
+  extends:
+  - keys: jūr/os
+    prefix:
+      suffixes: išk
+
+
+# Veikėjų ir veiksmažodinės ypatybės turėtojų pavadinimai
+
+# -ininkas, DLKŽ96, § 256
+
+- key: amat/ininkas
+  override-symbols: false
+  extends:
+  - keys: vyr/as
+    prefix:
+      suffixes: inink
+
+- key: amat/ininkai
+  override-symbols: false
+  extends:
+  - keys: vyr/ai
+    prefix:
+      suffixes: inink
+
+- key: amat/ininkė
+  override-symbols: false
+  extends:
+  - keys: gerv/ė
+    prefix:
+      suffixes: inink
+
+- key: amat/ininkės
+  override-symbols: false
+  extends:
+  - keys: gerv/ės
+    prefix:
+      suffixes: inink

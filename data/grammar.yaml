@@ -1,0 +1,3852 @@
+- code:   1
+  label:  Daiktavaris
+  name: noun
+  symbol: n
+  nodes:
+  - label: Daiktavardžio ypatumai
+    nodes:
+    - label: Tikriniškumas
+      code: 4
+      name: properness
+      nodes:
+      - label: Bendrinis
+        name: appellative
+        code: 1
+      - label: Asmenvardis-vardas
+        code: 2
+        name: name
+        symbol: ant
+      - code: 3
+        label:
+          Ne tikrinis, bet "iš pagarbos" ir pan. gali būti traktuojamas
+          (t.y. rašomas iš didžiosios) kaip tikrinis (pvz., Dievas,
+          Altingas, Koranas ir pan.)
+      - code: 4
+        symbol: top
+        label:
+          Tikrinis geografinis vardas - miestas, kaimas, šalis,
+          gyvenvietė, t.y. toks, iš kurio galimi vediniai su -ietis(-ė)
+          ir pan.
+      - code: 5
+        symbol: org
+        label: Kiti tikriniai vardai, pvz., firmų pavadinimai
+      - code: 6
+        symbol: hyd
+        label:
+          Tikrinis geografinis vardas: upės, ežerai, kalnai ir pan.
+      - code: 7
+        label:
+          Subendrinėjęs asmenvardis-vardas (gali būti rašomas ir iš
+          mažosios, ir iš didžiosios), pvz., Eskulapas-eskulapas,
+      - code: 8
+        label:
+          Subendrinėjęs tikrinis geografinis vardas (gali būti rašomas
+          tiek mažosios, tiek iš didžiosios), pvz.,
+          Kvirinalas-kvirinalas,
+      - code: 9
+        label:
+          Subendrinėjęs kitas tikrinis vardas (pvz., antikinių švenčių),
+          pvz., herėjos-Herėjos,
+    - code:  5
+      label: Neigiamumas
+      nodes:
+      - code: 1
+        label:
+          Daiktavardis žodynuose be neigiančio prefikso, neigiančių
+          prefiksų turėti negali
+      - code: 2
+        label: >
+          Turi neigiantį prefiksą a-; be šito prefikso jis nevartojamas;
+          pvz.: alogizmas
+      - code: 3
+        label: >
+          Turi neigiantį prefiksą an-; be šito prefikso jis nevartojamas;
+          pvz...: analfabetizmas
+      - code: 4
+        label: >
+          Turi neigiantį prefiksą a-; yra atitinkamas dktv ir be šito
+          prefikso; pvz...: aneurinas
+      - code: 5
+        label: >
+          Turi neigiantį prefiksą be-; yra atitinkamas dktv ir be šito
+          prefikso; pvz...: besotumas
+      - code: 6
+        label: >
+          Turi neigiantį prefiksą ne-; yra atitinkamas dktv ir be šito
+          prefikso; pvz...: neakivaizdininkas
+      - code: 7
+        label: >
+          Turi neigiantį prefiksą ne-; be šito prefikso jis nevartojamas;
+          pvz...: nerimas
+      - code: 8
+        label:
+          Turi neigiantį prefiksą be-; be šito prefikso jis nevartojamas;
+          bedalis
+      - code: 9
+        label: >
+          Daiktavardis žodynuose be neigiančio prefikso; gali turėti
+          neigiančius prefiksus ne-, nebe- ir pan.; pvz...:
+          abejingumas-neabejingumas
+    - code: 6
+      label: Kiti ypatumai (daiktavardžio pobūdis)
+      nodes:
+      - code: 1
+        label: Eilinis daiktavardis
+      - code: 2
+        label: Etnonimas (tautietis)
+      - code: 3
+        label:
+          Fleksiškai nekaitomas, (paprastai?) kitų kalbų, bendrinis,
+          pvz., kredo
+      - code: 4
+        label: >
+          Teksto vienetas-užsienio k. įterpinys (dažniausiai posakiuose,
+          pvz. lotyniškuose, ir pan.), kuriam lietuvių k. gramatinės
+          kategorijos (giminė, linksnis, kalbos d. ir pan.) neturi
+          prasmės arba turi ją sąlyginai; priskyrimas daiktavardžiams
+          [dažniausiai] irgi yra sąlyginis; pvz.: allegro, coupe, entree
+      - code: 5
+        label: >
+          Vyriškos giminės "moteriškai" linksniuojamas, žr. DLKG97 §104
+          e) ir f)
+      - code: 6
+        label: >
+          Vyriškos giminės, sudaiktavardėjęs iš būdvardžio, pvz jaunasis
+      - code: 7
+        label: >
+          Vyriškos giminės, sudaiktavardėjęs iš dalyvio, pvz.,
+          išrinktasis, palaimintasis, pažįstamas, laukiamasis, mylimasis,
+          kaltinamasis, nežinomasis, dirbantysis, suaugęs
+      - code: 8
+        label:
+          Moteriškos giminės, sudaiktavardėjęs iš būdvardžio, pvz.,
+          jaunoji, gulsčioji, baltosios, lygiosios
+      - code: 9
+        label:
+          Moteriškos giminės, sudaiktavardėjęs iš dalyvio, pvz.,
+          palaimintoji, pažįstama, kertamoji, kuliamoji, mylimoji,
+          dirbančioji, sprogtinoji
+      - code: 10
+        label: Bendrosios giminės "vyriškai" linksniuojamas
+      - code: 11
+        label: Bendrosios giminės "moteriškai" linksniuojamas
+  - label: Kaitybos charakteristika
+    nodes:
+    - code: 7
+      lemma: true
+      name: declension
+      label: Linksniavimo charakteristika
+      nodes:
+      - code: 0
+        label: Daiktavardis nekaitomas, nelinksniuojamas
+      # FIXME: Pirmos paradigmos tikriniai, turi vinaskaitos šauksmininką su
+      # -ai, priešingai nei visi kiti, kurie turi -e. Tai dalinai išsprendžiau
+      # visiems tikriniams daiktavardžiams, tačiau pasitaiko ir bendrinių
+      # daiktavardžių, kurie šauksmininke turi -ai, pavyzdžiui vabalai, žentai,
+      # tėvai. Žiūrėti DLKG97 §120.
+      - code: 1
+        label: (i)a linksniuotė, paradigma nr. 1 (žiūr DLKG97 psl.70)
+        declension: (i)a
+        paradigm: 1
+        pardefs:
+        - - key: Jon/as
+            properties:
+              properness: name
+          - key: vyr/as
+        - vyr/ai
+      # FIXME: Tai pačiai paradigmai priklauso tokie vienaskaitos vietininko
+      # formos žodžiai: elnyje, kelyje, vėjuje. Šauksmininkas: elni, kely,
+      # vėjau. Visi šie žodžiai priskirti vienai paradigmai, net jei vietininko
+      # ir šauksmininko galūnės skiriasi. Žiūrėti DLKG97 §119, 2 paradigma,
+      # vienaskaita, Vt. ir Š.
+      #
+      # Dalinai tai sprendžiu su galūnės patikrinimu, tačiau, vėjuje/vėjyje
+      # lieka neišspręstas.
+      - code: 2
+        label: (i)a linksniuotė, paradigma nr. 2 (žiūr DLKG97 psl.71)
+        declension: (i)a
+        paradigm: 2
+        pardefs:
+        - - key: eln/ias
+            endswith: ias
+          - key: vėj/as
+        - - key: eln/iai
+            endswith: ias
+          - key: vyr/ai
+      - code: 3
+        label: (i)a linksniuotė, paradigma nr. 3 (žiūr DLKG97 psl.71)
+        declension: (i)a
+        paradigm: 3
+        pardefs:
+        - - key: arkl/ys
+            endswith: ys
+          - key: brol/is
+        - eln/iai
+      - code: 4
+        label: (i)u linksniuotė, paradigma nr. 4 (žiūr DLKG97 psl.72)
+        declension: (i)u
+        paradigm: 4
+        pardefs:
+        - turg/us
+        - turg/ūs
+      - code: 5
+        label: (i)u linksniuotė, paradigma nr. 5 (žiūr DLKG97 psl.73)
+        declension: (i)u
+        paradigm: 5
+        pardefs:
+        - - key: turg/us
+            endswith: jus
+          - key: koridor/ius
+        - - key: vyr/ai
+            endswith: jus
+          - key: eln/iai
+      - code: 6
+        label: (i)o linksniuotė, paradigma nr. 6 (žiūr DLKG97 psl.74)
+        declension: (i)o
+        paradigm: 6
+        pardefs:
+        - jūr/a
+        - jūr/os
+      - code: 7
+        label: (i)o linksniuotė, paradigma nr. 7 (žiūr DLKG97 psl.74)
+        declension: (i)o
+        paradigm: 7
+        pardefs:
+        - - key: mart/i
+            endswith: i
+          - key: jūr/a
+        - - key: marč/i/os
+            endswith: i
+          - key: jūr/os
+      - code: 8
+        label: ė linksniuotė, paradigma nr. 8 (žiūr DLKG97 psl.75)
+        declension: ė
+        paradigm: 8
+        pardefs:
+        - - key: gerv/ė
+        - - key: dėd/ės
+            endswith: dė
+          - key: gerv/ės
+      - code: 9
+        label: i linksniuotė, paradigma nr. 9 (žiūr DLKG97 psl.76)
+        declension: i
+        paradigm: 9
+        pardefs:
+        - - key: šird/is
+            endswith: dis
+          - key: krosn/is
+        - - key: šird/ys
+            endswith: dis
+          - key: žuv/ys
+            endswith: vis
+          - key: krosn/ys
+      - code: 10
+        label: i linksniuotė, paradigma nr. 10(žiūr DLKG97 psl.77)
+        declension: i
+        paradigm: 10
+        pardefs:
+        - žvėr/is
+        - krosn/ys
+      - code: 11
+        label: i linksniuotė, paradigma nr. 11(žiūr DLKG97 psl.77)
+        declension: i
+        paradigm: 11
+        pardefs:
+        - - key: š/uo
+            endswith: šuo
+          - key: akm/uo
+        - - key: š/un/ys
+            endswith: šuo
+          - key: akm/en/ys
+      - code: 12
+        label: i linksniuotė, paradigma nr. 12(žiūr DLKG97 psl.78)
+        declension: i
+        paradigm: 12
+        pardefs:
+        - ses/uo
+        - ses/er/ys
+      - code: 13
+        label: Paradigma daiktavardžiui petys;
+        paradigm: 13
+        pardefs:
+        - pet/ys
+        - peč/iai
+      - code: 14
+        label: Paradigma daiktavardžiui žmogus (žmonės);
+        pardefs:
+        - turg/us
+        - gerv/ės
+      - code: 15
+        label: Paradigma daiktavardžiui pats;
+        pardefs:
+        - pat/s
+        - pat/ys
+      - code: 16
+        label: Paradigma daiktavardžiui viešpats;
+        pardefs:
+        - viešpat/s
+        - peč/iai
+      - code: 17
+        label: Paradigma daiktavardžiui mėnuo;
+        pardefs:
+        - mėn/uo
+        - mėn/esiai
+      - code: 18
+        label:
+          Paradigma vyr. g. daiktavardžiams iš sudaiktavardėjusių
+          įvardžiuotinių būdvardžių bei dalyvių su -asis, pvz., jaunasis,
+          palaimintasis, miegamasis, laukiamasis, mylimasis, nežinomasis
+        pardefs:
+        - jaun/asis
+        - jaun/ieji
+      - code: 19
+        label:
+          Paradigma vyr. g. daiktavardžiams iš sudaiktavardėjusių
+          įvardžiuotinių būdvardžių ar dalyvių su -[t]ysis, pvz., pėstysis,
+          vyresnysis, dirbantysis
+        pardefs:
+        - pėst/ysis
+        - pėst/ieji
+      - code: 20
+        label:
+          Paradigma vyr. g. daiktavardžiams iš sudaiktavardėjusių
+          neįvardžiuotinių dalyvių su -[..]as, pvz., pažįstamas
+        pardefs:
+        - pažįstam/as
+        - pažįstam/i
+      - code: 21
+        label:
+          Paradigma vyr. g. daiktavardžiams iš sudaiktavardėjusių
+          neįvardžiuotinių dalyvių su -ęs, pvz., suaugęs
+        pardefs:
+        - suaug/ęs
+        - suaug/ę
+      - code: 22
+        label:
+          Paradigma mot. g. daiktavardžiams iš sudaiktavardėjusių
+          įvardžiuotinių būdvardžių bei dalyvių su -(i)oji, pvz., jaunoji,
+          palaimintoji, gulsčioji, kaltinamoji, kuliamoji, mylimoji,
+          dirbančioji, sprogtinoji
+        pardefs:
+        - jaun/oji
+        - jaun/osios
+      - code: 23
+        label:
+          Paradigma vyr. g. sangrąžiniams daiktavardžiams iš sangrąžinių
+          veiksmažodžių su ‑asis, pvz., barimasis(-osi, -uisi, ...)
+        pardefs:
+        - barim/asis
+        - barim/aisi
+    - code: 8
+      name: gender
+      label: Giminės charakteristika
+      nodes:
+      - code: 1
+        name: masculine
+        symbol: m
+        label: Eilinis vyr. gim. daiktavardis
+      - code: 2
+        value: [masculine, feminine]
+        symbol: mf
+        label:
+          Vyr. gim. dktv; turi atitikmenį mot. gim., pvz.,
+          informatikas->informatikė
+      - code: 3
+        value: [common, masculine]
+        symbol: um
+        label:
+          Daiktavardis nekaitomas; tradiciškai laikoma, kad tai vyr. gim.,
+          nors tai ne visais atvejais akivaizdu., pvz., kredo, taksi
+      - code: 4
+        value: [neuter, masculine]
+        symbol: mn
+        label: >
+          Dažniausiai [tradiciškai?] laikoma, kad daiktavardis yra vyr. gim.,
+          bet iš principo (teoriškai) jis gali būti tiek vyr., tiek ir
+          mot.giminės, pvz., kai kurie nekaitomi dktv: buržua, atašė, portjė
+          ar kaitomi: junga, buožė
+      - code: 5
+        name: feminine
+        symbol: f
+        label: Eilinis mot. gim. daiktavardis
+      - code: 6
+        name: neuter
+        symbol: nt
+        label: Eilinis bendr. gim. daiktavardis
+      - code: 7
+        value: [common, feminine]
+        symbol: uf
+        label: >
+          Daiktavardis nekaitomas; gali būti laikoma, kad tai mot. gim., nors
+          tai ne visais atvejais akivaizdu; pvz.: bezė
+      - code: 8
+        value: [feminine, masculine]
+        symbol: fm
+        label:
+          Mot. gim. daiktavardis; turi atitikmenį vyr. gim. pvz.,
+          aulininkė->aulininkas
+      - code: 9
+        name: common
+        symbol: ut
+        label:
+          Daiktavardis nekaitomas; apie jo giminę ką nors pasakyti sunku
+          (teksto vienetai-užsienio k. įterpiniai ir kt.)
+    - code: 9
+      name: number
+      label: Skaičiaus charakteristika
+      nodes:
+      - code: 0
+        label:
+          Daiktavardis nekaitomas, (gali būti laikoma, kad) skaičiaus
+          kategorijos neturi,
+      - code: 1
+        label: Normalus abiskaitinis, pvz., namas,
+      - code: 2
+        label: >
+          Abiskaitinis "tipo analgetikai": nors žodynuose (dažniausiai)
+          pateikiamas daugiskaitoje, gali įgyti ir "normalias" vienaskaitos
+          formas, pvz., analgetikai-analgetikas,
+      - code: 3
+        name: plural
+        symbol: pl
+        label: Daugiskaitinis, pvz., miltai, žirklės,
+        restrict:
+        - symbols:
+            number: pl
+      - code: 4
+        name: singular
+        symbol: sg
+        label: Normalus vienaskaitinis, pvz., cukrus, duona, grietinė, pienas, sviestas.
+        restrict:
+        - symbols:
+            number: sg
+      - code: 5
+        label: >
+          "Labiau vienaskaitinis" nei abiskaitinis, nes tai tikrinis
+          vardas, pvz., Achilas,
+      - code: 6
+        label: >
+          "Labiau daugiskaitinis" nei abiskaitinis, pvz. Parkos (tikrinis
+          iš TŽŽ),
+    - code: 10
+      label: Sangrąžiškumo charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Daiktavardis neturi sangrąžiškumo požymio (=sangrąžiškumo požymis
+          daiktavardžiui neturi prasmės), pvz., namas,
+      - code: 1
+        label: >
+          Žodynuose (paprastai) pateikiamas nesangrąžinis, tačiau galimos ir
+          sangrąžinės formos, pvz., apgulimas,
+      - code: 2
+        label: >
+          Žodynuose pateikiamas nesangrąžinis, sangrąžinių formų neturi (arba
+          sangrąžiškumo požymio daiktavardis iš vis neturi, o čia kalbam apie
+          sangrąžiškumą dėl to, kad dktv padarytas iš veiksmažodžio), pvz.,
+          liudijimas, mokytojas,
+      - code: 3
+        label: >
+          Žodynuose pateikiamas sangrąžinis; nesangrąžinių formų neturi, pvz.,
+          juokimasis, kėsinimasis,
+    - code: 11
+      label: Darybos charakteristika
+      nodes:
+      - code: 0
+        label: >
+          pamatinis, nepadarytas iš nieko daiktavardis: namas,
+      - code: 1
+        label: >
+          padarytas iš daiktavardžio su priesaga -ininkas[ė]: aulininkas,
+      - code: 2
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -elis[ė]: balnelis,
+      - code: 3
+        label: >
+          padarytas iš daiktavardžio su priesaga -ingumas: balsingumas,
+      - code: 4
+        label: >
+          padarytas iš daiktavardžio su priesaga -ystė,
+      - code: 5
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -iokas[ė]:
+          berniokas,
+      - code: 6
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -iukas[ė]:
+          berniukas,
+      - code: 7
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -iūkštis[tė]:
+          berniūkštis,
+      - code: 8
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ytis[tė]:
+          bernytis,
+      - code: 9
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -užis[ė]: bernužis,
+      - code: 10
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -aitis[tė]:
+          dievaitis,
+      - code: 11
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškumas: dieviškumas,
+      - code: 12
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ukas[ė]: dievukas,
+      - code: 13
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -utis[tė]: gužutis,
+      - code: 14
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ėkas[ė]: paršėkas,
+      - code: 15
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ėlis[ė]: avinėlis,
+      - code: 16
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -okas[ė]: bėrokas,
+      - code: 17
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -elytis[tė]:
+          žodelytis,
+      - code: 18
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ulis[ė]: tėtulis,
+      - code: 19
+        label: >
+          padarytas iš daiktavardžio su priesaga -ie-tis[tė]: azerbaidžanietis,
+      - code: 20
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškis[ė]: birštoniškė,
+      - code: 21
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ikė[is?]: mergikė,
+      - code: 22
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -io-tė[tis?]:
+          mergiotė,
+      - code: 23
+        label: >
+          padarytas iš būdvardžio su priesaga -umas: abipusiškumas,
+      - code: 24
+        label: >
+          padarytas iš būdvardžio su priesaga -ybė: akylybė,
+      - code: 25
+        label: >
+          padarytas iš daiktavardžio su priesaga -ingumas ir su priešdėliu ne-:
+          neturtingumas,
+      - code: 26
+        label: >
+          padarytas iš daiktavardžio su priesaga -ystė ir su priešdėliu ne-:
+          neturtystė,
+      - code: 27
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškumas ir su priešdėliu be-:
+          beglobiškumas,
+      - code: 28
+        label: >
+          padarytas iš daiktavardžio su priesaga -ystė ir su priešdėliu be-:
+          bepinigystė,
+      - code: 29
+        label: >
+          padarytas iš daiktavardžio su priesaga -ininkas[ė] ir su priešdėliu
+          ne-: nepriemokininkas,
+      - code: 30
+        label: >
+          mažybinis, padarytas iš daiktavardžio su priesaga -ėlis[ė] ir su
+          priešdėliu ne-: nelaimėlė,
+      - code: 31
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškumas ir su priešdėliu ne-:
+          nemokšiškumas,
+      - code: 32
+        label: >
+          padarytas iš daiktavardžio su priesaga -umas ir su neig. pref. a-:
+          apolitiškumas,
+      - code: 33
+        label: >
+          padarytas iš būdvardžio su priesaga -umas ir su priešdėliu be-:
+          beidėjiškumas,
+      - code: 34
+        label: >
+          padarytas iš būdvardžio su priesaga -umas ir su priešdėliu ne-:
+          nedorumas,
+      - code: 35
+        label: >
+          padarytas iš būdvardžio su priesaga -iškumas: savitarpiškumas,
+      - code: 36
+        label: >
+          padarytas iš būdvardžio su priesaga -ybė ir su priešdėliu be-:
+          bekraštybė,
+      - code: 37
+        label: >
+          padarytas iš skaitvardžio su priesaga -ybė: pirmenybė,
+      - code: 38
+        label: >
+          padarytas iš skaitvardžio su priesaga -umas: pirmumas,
+      - code: 39
+        label: >
+          mažybinis, padarytas iš skaitvardžio su priesaga -ukas[ė]:
+          vienetukas, vienukė,
+      - code: 40
+        label: >
+          padarytas iš skaitvardžio su priesaga -ystė: vienystė,
+      - code: 41
+        label: >
+          mažybinis, padarytas iš skaitvardžio su priesaga -utėlis: vienutėlis,
+      - code: 42
+        label: >
+          mažybinis, padarytas iš skaitvardžio su priesaga -utis: vienutis,
+      - code: 43
+        label: >
+          mažybinis, padarytas iš skaitvardžio su priesaga -utukas: vienutukas,
+      - code: 44
+        label: >
+          padarytas iš skaitvardžio su priesaga -ulė[is?]: trijulė,
+      - code: 45
+        label: >
+          mažybinis, padarytas iš skaitvardžio su priesaga -iukė[as?]: šešiukė,
+      - code: 46
+        label: >
+          padarytas iš įvardžio su priesaga -umas: saviškumas,
+      - code: 47
+        label: >
+          padarytas iš veiksmažodžio su -imas(ymas)  plius su priešdėliu ap-:
+          apgulimas,
+      - code: 48
+        label: >
+          padarytas iš veiksmažodžio su -imas(ymas)  plius su prefiksu apsi-:
+          apsikalimas,
+      - code: 49
+        label: >
+          padarytas iš veiksmažodžio su -imas(-imasis) (be prefikso),
+      - code: 50
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu iš-:
+          išbarimas,
+      - code: 51
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas  plius su priešdėliu iš-:
+          iškalinėjimas,
+      - code: 52
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu į-:
+          įgnybimas,
+      - code: 53
+        label: >
+          padarytas iš veiksmažodžio su -ėjas(a) (be prefikso),
+      - code: 54
+        label: >
+          padarytas iš veiksmažodžio su -ikas(ė) (be prefikso),
+      - code: 55
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu nu-:
+          nugulimas,
+      - code: 56
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu pa-:
+          pabarimas,
+      - code: 57
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu per-:
+          perkalimas,
+      - code: 58
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu pra-:
+          prakalimas,
+      - code: 59
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu pri-:
+          prigulimas,
+      - code: 60
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas  plius su priešdėliu pri-:
+          prikalinėjimas,
+      - code: 61
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu su-:
+          sugulimas,
+      - code: 62
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu už-:
+          užgulimas,
+      - code: 63
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas  plius su priešdėliu už-:
+          užkalinėjimas,
+      - code: 64
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu užsi-:
+          užsigulimas,
+      - code: 65
+        label: >
+          padarytas iš veiksmažodžio su -ėjas(a)  plius su priešdėliu ap-:
+          apdirbėja,
+      - code: 66
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu at-:
+          atlupimas,
+      - code: 67
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas(-inėjimasis ?) (be prefikso),
+      - code: 68
+        label: >
+          padarytas iš veiksmažodžio su -tinumas (be prefikso),
+      - code: 69
+        label: >
+          padarytas iš veiksmažodžio su -ėjas(a)  plius su priešdėliu iš-:
+          išdirbėja,
+      - code: 70
+        label: >
+          padarytas iš veiksmažodžio su -ėjas(a)  plius su priešdėliu pa-:
+          padirbėja,
+      - code: 71
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas  plius su priešdėliu pa-:
+          padirbinėjimas,
+      - code: 72
+        label: >
+          padarytas iš veiksmažodžio su -inėjimas  plius su priešdėliu per-:
+          perdirbinėjimas,
+      - code: 73
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu persi-:
+          persidirbimas,
+      - code: 74
+        label: >
+          padarytas iš veiksmažodžio su -tojas(a) (be prefikso): aiškintojas,
+      - code: 75
+        label: >
+          padarytas iš veiksmažodžio su -tojas(a)  plius su priešdėliu ap-:
+          apdulkintoja,
+      - code: 76
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu api-:
+          apibendrinimas,
+      - code: 77
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su priešdėliu ati-:
+          atitolinimas,
+      - code: 78
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu atsi-:
+          atsisveikinimas,
+      - code: 79
+        label: >
+          padarytas iš veiksmažodžio su -tojas(a)  plius su priešdėliu iš-:
+          išaiškintojas,
+      - code: 80
+        label: >
+          padarytas iš veiksmažodžio su -tojas(a)  plius su priešdėliu į-:
+          įdukrintojas,
+      - code: 81
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu įsi-:
+          įsigilinimas,
+      - code: 82
+        label: >
+          padarytas iš veiksmažodžio su -[(i)a,i,o]mumas  plius su prefiksu
+          nepa-: nepakaltinamumas,
+      - code: 83
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu nusi-:
+          nusigyvenimas,
+      - code: 84
+        label: >
+          padarytas iš veiksmažodžio su -tojas(a)  plius su priešdėliu pa-:
+          pagreitintoja,
+      - code: 85
+        label: >
+          padarytas iš veiksmažodžio su -[(i)a,i,o]mumas  plius su prefiksu
+          pa-: pakaltinamumas, pastebimumas,
+      - code: 86
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu par-:
+          pargabenimas,
+      - code: 87
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu pasi-:
+          pasiaiškinimas,
+      - code: 88
+        label: >
+          iš vksm su -toj-as(a)  plius su prefiksu pasi-: pasisavintoja,
+      - code: 89
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu prasi-:
+          prasigyvenimas,
+      - code: 90
+        label: >
+          padarytas iš veiksmažodžio su -imas  plius su prefiksu prisi-:
+          prisigretinimas,
+      - code: 91
+        label: >
+          mažybinis, padarytas iš vksm su -tojėlis(ė) (be prefikso),
+      - code: 92
+        label: >
+          padarytas iš veiksmažodžio su -[(i)a,i,o]mumas  plius su prefiksu
+          su-: sugyvenamumas,
+      - code: 93
+        label: >
+          iš vksm su -tojas(a) su pa-: suniekintintoja,
+      - code: 94
+        label: >
+          iš vksm su -imas su susi-: susirūpinimas,
+      - code: 95
+        label: >
+          iš vksm su -[(i)a,i,o]mumas bepref: virškinamumas, tariamumas,
+          regimumas,
+      - code: 96
+        label: >
+          iš vksm su -inėjimas su į-: įtarinėjimas,
+      - code: 97
+        label: >
+          iš vksm su -imas su nesu-: nesutarimas,
+      - code: 98
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė bepref: tariamybė,regimybė,
+      - code: 99
+        label: >
+          iš vksm su -ėjas(a) su už-: užgrobėjas,
+      - code: 100
+        label: >
+          iš vksm su -ikas(ė) su už-: užgrobikas,
+      - code: 101
+        label: >
+          iš vksm su -telėjimas bepref: aiktelėjimas,
+      - code: 102
+        label: >
+          iš vksm su -terėjimas bepref: aisterėjimas,
+      - code: 103
+        label: >
+          iš vksm su -tybė su at-: atsietybė,
+      - code: 104
+        label: >
+          iš vksm su -imas su išsi-: išsiliejimas,
+      - code: 105
+        label: >
+          iš vksm su -tojas(a) su per-: perįgaliotojas,
+      - code: 106
+        label: >
+          iš vksm su -tojas(a) su pra-: praleidinėtojas,
+      - code: 107
+        label: >
+          iš vksm su -tojas(a) su už-: užrašinėtojas,
+      - code: 108
+        label: >
+          iš vksm su -imas(-imasis) ir su be-: bedievėjimas,
+      - code: 109
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su neį-: neįkainojamumas, neįtikimumas,
+      - code: 110
+        label: >
+          iš vksm su -tojas(a) su par-: pardavinėtojas,
+      - code: 111
+        label: >
+          iš vksm su -tojas(a) su pri-: prigaudinėtojas,
+      - code: 112
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su ne-: nemirštamumas,
+      - code: 113
+        label: >
+          iš vksm su -inėjimas su at-: atkalbinėjimas,
+      - code: 114
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su ne-: nejudamybė,
+      - code: 115
+        label: >
+          iš vksm su -ėjas(a) su pra-: pradėjėjas,
+      - code: 116
+        label: >
+          iš vksm su -[(i)a,i,o]mybė su iš-: ištikimybė,
+      - code: 117
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su iš-: ištikimumas,
+      - code: 118
+        label: >
+          iš vksm su -[(i)a,i,o]mybė su į-: įtikimybė,
+      - code: 119
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su į-: įtikimumas,
+      - code: 120
+        label: >
+          iš vksm su -tinumas su ne-: netikėtinumas,
+      - code: 121
+        label: >
+          iš vksm su -tybė su ne-: netikėtybė,
+      - code: 122
+        label: >
+          iš vksm su -(ė)tumas su ne-: netikėtumas,
+      - code: 123
+        label: >
+          iš vksm su -[(i)a,i,o]mybė su pa-: patikimybė,
+      - code: 124
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su per-: perregimumas,pereinamumas,
+      - code: 125
+        label: >
+          iš vksm su -imas su neapsi-: neapsižiūrėjimas,
+      - code: 126
+        label: >
+          iš vksm su -tojas(a) su nu-: nugalėtojas,
+      - code: 127
+        label: >
+          iš vksm su -inėjimas su pasi-: pasibėginėjimas,
+      - code: 128
+        label: >
+          iš vksm su -tumas bepref: baigtumas,
+      - code: 129
+        label: >
+          iš vksm su -ėjas(a) su į-: įdiegėjas,
+      - code: 130
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su nepa-: nepabaigiamybė,
+      - code: 131
+        label: >
+          iš vksm su -ėjas(a) su per-: perjungėjas,
+      - code: 132
+        label: >
+          iš vksm su -tinumas su pri-: primygtinumas,
+      - code: 133
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su neiš-: neišvengiamybė,
+      - code: 134
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su neiš-: neišvengiamumas,
+      - code: 135
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su nepri-: neprieinamumas,
+      - code: 136
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su par-: pareinamybė,
+      - code: 137
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su par-: pareinamumas,
+      - code: 138
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su pra-: praeinamumas,
+      - code: 139
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su pri-: prieinamumas,
+      - code: 140
+        label: >
+          iš vksm su -inėjimas su ap-: apsakinėjimas,
+      - code: 141
+        label: >
+          iš vksm su -[(i)a,i,o]mybė su at-: atsakomybė,
+      - code: 142
+        label: >
+          iš vksm su -inėjimas su atsi-: atsiprašinėjimas,
+      - code: 143
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su neati-: neatitaisomumas,
+      - code: 144
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su neiš-: nepriklausomybė,
+      - code: 145
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su nesu-: nesulaikomumas,
+      - code: 146
+        label: >
+          iš vksm su -inėjimas su nu-: nudarinėjimas,
+      - code: 147
+        label: >
+          iš vksm su -toj-as(a) su prasi-: prasimanytojas,
+      - code: 148
+        label: >
+          iš vksm su -[(i)a,i,o]myb-ė su pri-: priklausomybė,
+      - code: 149
+        label: >
+          iš vksm su -inėjimas su su-: surašinėjimas,
+      - code: 150
+        label: >
+          iš vksm su -inėjimas su susi-: susirašinėjimas,
+      - code: 151
+        label: >
+          iš vksm su -tybė su ati-: atitrauktybė,
+      - code: 152
+        label: >
+          iš vksm su -inėjimas su išsi-: išsisukinėjimas,
+      - code: 153
+        label: >
+          iš vksm su -tinybė su atsi-: atsitiktinybė,
+      - code: 154
+        label: >
+          iš vksm su -tinumas su atsi-: atsitiktinumas,
+      - code: 155
+        label: >
+          iš vksm su -imas su ne-: netekimas,
+      - code: 156
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su už-: užtenkamumas,
+      - code: 157
+        label: >
+          iš vksm su -ėjas(a) su su-: surinkėjas,
+      - code: 158
+        label: >
+          iš vksm su -tinumas su iš-: išimtinumas,
+      - code: 159
+        label: >
+          iš vksm su -ėjas(a) su pri-: priėmėja,
+      - code: 160
+        label: >
+          iš vksm su -ikas(ė) su iš-: išdavikas,
+      - code: 161
+        label: >
+          iš vksm su -ikas(ė) su į-: įdavikas,
+      - code: 162
+        label: >
+          iš vksm su -ėjas(a) su par-: pardavėja,
+      - code: 163
+        label: >
+          iš vksm su -ikas(ė) su par-: pardavikas,
+      - code: 164
+        label: >
+          iš vksm su -inėjimas su par-: pardavinėjimas,
+      - code: 165
+        label: >
+          iš vksm su -tumas su su-: suinteresuotumas,
+      - code: 166
+        label: >
+          iš vksm su -ėjas(a) su at-: atradėjas,
+      - code: 167
+        label: >
+          iš vksm su -tumas su ap-: apšviestumas,
+      - code: 168
+        label: >
+          iš vksm su -ėjas(a) su nu-: nuleidėjas,
+      - code: 169
+        label: >
+          iš vksm su -inėjimas su pra-: praleidinėjimas,
+      - code: 170
+        label: >
+          iš vksm su -inėjimas su apsi-: apsimetinėjimas,
+      - code: 171
+        label: >
+          iš vksm su -imas su nesusi-: nesusipratimas,
+      - code: 172
+        label: >
+          iš vksm su -[(i)a,i,o]mumas su nenu-: nenuilstamumas,
+      - code: 173
+        label: >
+          iš vksm su -ikas(ė) su pri-: prigavikas,
+      - code: 174
+        label: >
+          iš vksm su -tinybė bepref: būtinybė,
+      - code: 175
+        label: >
+          iš vksm su -tybė bepref: būtybė,
+      - code: 176
+        label: >
+          iš ištikt su -telėjimas: pakštelėjimas,
+    - label: Derivacijos charakteristika
+      nodes:
+      - code: 12
+        name: diminutive
+        label: Demunityviniai vediniai
+        nodes:
+        - code: 1
+          label: >
+            Deminutyvų neturi,
+        - code: 2
+          name: single-gender
+          label: >
+            Turi normalius deminutyvus; deminutyvų abiejose giminėse (kaip kad
+            pvz. meška-meškutis-meškutė) neturi,
+          pardefs:
+          # -elis, -ėlis
+          - - key: katin/ėlis
+              properties:
+                gender: masculine
+              syllables:
+                gt: 2
+            - key: nam/elis
+              properties:
+                gender: masculine
+          - - key: katin/ėliai
+              properties:
+                gender: masculine
+              syllables:
+                gt: 2
+            - key: nam/eliai
+              properties:
+                gender: masculine
+          - - key: arbat/ėlė
+              properties:
+                gender: feminine
+              syllables:
+                gt: 2
+            - key: saul/elė
+              properties:
+                gender: feminine
+          - - key: arbat/ėlės
+              properties:
+                gender: feminine
+              syllables:
+                gt: 2
+            - key: saul/elės
+              properties:
+                gender: feminine
+
+          # -ukas
+          - - key: nam/ukas
+              properties:
+                gender: masculine
+            - key: saul/ukė
+              properties:
+                gender: feminine
+          - - key: nam/ukai
+              properties:
+                gender: masculine
+            - key: saul/ukės
+              properties:
+                gender: feminine
+
+          # -utis
+          - - key: mešk/utis
+              properties:
+                gender: masculine
+            - key: mešk/utė
+              properties:
+                gender: feminine
+          - - key: mešk/učiai
+              properties:
+                gender: masculine
+            - key: mešk/utės
+              properties:
+                gender: feminine
+
+          # -aitis
+          - - key: vežim/aitis
+              properties:
+                gender: masculine
+            - key: obel/aitė
+              properties:
+                gender: feminine
+          - - key: vežim/aičiai
+              properties:
+                gender: masculine
+            - key: obel/aitės
+              properties:
+                gender: feminine
+
+          # -ytis
+          - - key: brol/ytis
+              properties:
+                gender: masculine
+            - key: saul/ytė
+              properties:
+                gender: feminine
+          - - key: brol/yčiai
+              properties:
+                gender: masculine
+            - key: saul/ytės
+              properties:
+                gender: feminine
+
+          # -ulis
+          - - key: tėv/ulis
+              properties:
+                gender: masculine
+            - key: mot/ulė
+              properties:
+                gender: feminine
+          - - key: tėv/uliai
+              properties:
+                gender: masculine
+            - key: mot/ulės
+              properties:
+                gender: feminine
+
+          # -užis
+          - - key: tėv/užis
+              properties:
+                gender: masculine
+            - key: mot/užė
+              properties:
+                gender: feminine
+          - - key: tėv/užiai
+              properties:
+                gender: masculine
+            - key: mot/užės
+              properties:
+                gender: feminine
+
+          # -(i)ūkštis
+          - - key: tėv/ūkštis
+              properties:
+                gender: masculine
+            - key: mot/ūkštė
+              properties:
+                gender: feminine
+          - - key: tėv/ūkščiai
+              properties:
+                gender: masculine
+            - key: mot/ūkštės
+              properties:
+                gender: feminine
+
+          # -okšnis
+          - - key: tėv/okšnis
+              properties:
+                gender: masculine
+            - key: mot/okšnė
+              properties:
+                gender: feminine
+          - - key: tėv/okšniai
+              properties:
+                gender: masculine
+            - key: mot/okšnės
+              properties:
+                gender: feminine
+
+          # -šė
+          - - key: merg/šė
+              properties:
+                gender: feminine
+              lemmas:
+                - merga
+                - boba
+          - - key: merg/šės
+              properties:
+                gender: feminine
+              lemmas:
+                - merga
+                - boba
+
+          # -ikė
+          - - key: merg/ikė
+              properties:
+                gender: feminine
+          - - key: merg/ikės
+              properties:
+                gender: feminine
+
+          # -(i)okas
+          - - key: bern/iokas
+              properties:
+                gender: masculine
+            - key: merg/iotė
+              properties:
+                gender: feminine
+          - - key: bern/iokai
+              properties:
+                gender: masculine
+            - key: merg/iotės
+              properties:
+                gender: feminine
+
+          # -etė
+          - tank/etė
+          - tank/etės
+
+          # -utėlis
+          - - key: bern/utėlis
+              properties:
+                gender: masculine
+            - key: merg/utėlė
+              properties:
+                gender: feminine
+          - - key: bern/utėliai
+              properties:
+                gender: masculine
+            - key: merg/utėlės
+              properties:
+                gender: feminine
+
+        - code: 3
+          name: both-genders
+          label: >
+            Turi deminutyvus abiejose giminėse, pvz., meška-meškutis-meškutė,
+          pardefs:
+          - - key: katin/ėlis
+              properties:
+                gender: masculine
+              syllables:
+                gt: 2
+            - key: nam/elis
+              properties:
+                gender: masculine
+          - - key: katin/ėliai
+              properties:
+                gender: masculine
+              syllables:
+                gt: 2
+            - key: nam/eliai
+              properties:
+                gender: masculine
+          - - key: arbat/ėlė
+              properties:
+                gender: feminine
+              syllables:
+                gt: 2
+            - key: saul/elė
+              properties:
+                gender: feminine
+          - - key: arbat/ėlės
+              properties:
+                gender: feminine
+              syllables:
+                gt: 2
+            - key: saul/elės
+              properties:
+                gender: feminine
+
+          - nam/ukas
+          - nam/ukai
+          - saul/ukė
+          - saul/ukės
+
+          - mešk/utis
+          - mešk/učiai
+          - mešk/utė
+          - mešk/utės
+
+          - vežim/aitis
+          - vežim/aičiai
+          - obel/aitė
+          - obel/aitės
+
+          - brol/ytis
+          - brol/yčiai
+          - saul/ytė
+          - saul/ytės
+
+          - tėv/ulis
+          - tėv/uliai
+          - mot/ulė
+          - mot/ulės
+
+          - tėv/užis
+          - tėv/užiai
+          - mot/užė
+          - mot/užės
+
+          - tėv/ūkštis
+          - tėv/ūkščiai
+          - mot/ūkštė
+          - mot/ūkštės
+
+          - tėv/okšnis
+          - tėv/okšniai
+          - mot/okšnė
+          - mot/okšnės
+
+          # -ikė
+          - - key: merg/ikė
+              properties:
+                gender: feminine
+          - - key: merg/ikės
+              properties:
+                gender: feminine
+
+          # -(i)okas
+          - bern/iokas
+          - bern/iokai
+          - merg/iotė
+          - merg/iotės
+
+          - tank/etė
+          - tank/etės
+
+          - bern/utėlis
+          - bern/utėliai
+          - merg/utėlė
+          - merg/utėlės
+
+        - code: 4
+          label: >
+            Daiktavardžiai nekaitomi (nėra linksniuojami), nors kai kurie jų,
+            ypač dažniau vartojami ir ypač šnek. kalboje, "lietuviškas" kai
+            kurių linksnių galūnes gali ir įgyti; laikom, kad kai kurie tokie
+            nekait. dktv. kartais gali įgyti mažybines formas, bet kaip būtent
+            mažybinės priesagos prie tokių nekait. dktv. "lipdomos", šiame
+            darbo etape toks suklasifikavimas daromas nebuvo (tai [galbūt] yra
+            ateities etapų užduotis), pvz., atašė, buržua
+        - code: 5
+          label: >
+            Kaip ir 2 (turi normalius deminutyvus; deminutyvų abiejose giminėse
+            neturi); tik: pats jau yra mažybinis, pvz., balnelis (dviračio)
+      - code: 13
+        label: Daiktavardžio vedinių su -ininkas(-ė) galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+          pardefs:
+          - amat/ininkas
+          - amat/ininkai
+          - amat/ininkė
+          - amat/ininkės
+      - code: 14
+        label: Daiktavardžio vedinių su -ybė galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+          pardefs:
+          - brol/ybė
+          - brol/ybės
+      - code: 15
+        label: Daiktavardžio vedinių su -ystė galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+          pardefs:
+          - vaik/ystė
+          - vaik/ystės
+      - code: 16
+        label: Būdvardžio vedinių su -ingas galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+          pardefs:
+          - mad/ingas
+          - mad/ingi
+          - mad/inga
+          - mad/ingos
+      - code: 17
+        label: Būdvardžio vedinių su -iškas galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+          pardefs:
+          - ūk/iškas
+          - ūk/iški
+          - ūk/iška
+          - ūk/iškos
+      - code: 18
+        label: Būdvardžio vedinių su -inis galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 19
+        label: Prieveiksmio vedinių su -in(i)ai galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 20
+        label: vedinių su -ėtas galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 21
+        label: Būdvardžio vedinių su -(u)otas galimumas
+        nodes:
+        - code: 0
+          label: tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 22
+        label: Prefiksiniai vediniai
+        nodes:
+        - code: 0
+          label: ''
+        - code: 1
+          label: 'E,N/E;E/S,N/E/S'
+        - code: 2
+          label: 'E,N/E;'
+        - code: 3
+          label: ';E/S,N/E/S'
+        - code: 4
+          label: '+,N;'
+        - code: 5
+          label: ';+,N/S'
+        - code: 6
+          label: '+,N;+,N/S'
+        - code: 7
+          label: '+,N,F,N/F;+,N/S,F/S,N/F/S'
+        - code: 8
+          label: 'E,N/E;ap/S,N/ap/S'
+        - code: 9
+          label: 'E,N/E;at/S,N/at/S'
+        - code: 10
+          label: '+,N,F,N/F;'
+        - code: 11
+          label: '+,B;'
+        - code: 12
+          label: 'N/E;'
+        - code: 13
+          label: '+,N,R,N/R;'
+        - code: 14
+          label: 'N;'
+        - code: 15
+          label: 'E,N/E;E/S_,N/E/S_'
+        - code: 16
+          label: '+, N_,N/B_;+, N/S_,N/B/S_'
+        - code: 17
+          label: '+,N;N,N/S'
+        - code: 18
+          label: ';+,N/S,F/S,N/F/S'
+        - code: 19
+          label: '+,N,H,N/H;N/S,G/S,N/G/S'
+        - code: 20
+          label: '+,N,G,N/G;+,N/S,G/S,N/G/S'
+        - code: 21
+          label: '+,N,K,N/K;'
+        - code: 22
+          label: '+,N;'
+- code:   2
+  name: adjective
+  symbol: adj
+  label:  Būdvardis
+  nodes:
+  - label: Kaitybos charakteristika
+    nodes:
+    - code: 4
+      label: Linksniavimo charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Būdvardis nekaitomas, nelinksniuojamas, pvz.: bordo
+        nodes: []
+      - code: 1
+        label: >
+          (i)a linksniuotė, paradigma nr. 1 (žiūr DLKG97 psl.179), pvz.: geras
+      - code: 2
+        label: >
+          (i)a linksniuotė, paradigma nr. 2 (žiūr DLKG97 psl.179), pvz.: žalias
+      - code: 3
+        label: >
+          (i)a linksniuotė, paradigma nr. 3 (žiūr DLKG97 psl.179-180), pvz.:
+          kairys, paskesnis
+      - code: 4
+        label: >
+          (i)a linksniuotė, paradigma nr. 4 (žiūr DLKG97 psl.180), pvz.:
+          paskutinis
+      - code: 5
+        label: >
+          (i)u linksniuotė, paradigma nr. 5 (žiūr DLKG97 psl.181), pvz.: gražus
+      - code: 6
+        label: >
+          Paradigma būdvardžiui vėlus, pvz.: vėlus(-as)
+      - code: 7
+        label: >
+          Paradigma būdvardžiams iš subūdvardėjusių veik. r. esamojo l. dalyvių
+          su  -antis, ‑intis, pvz.: sekantis, pasiturintis
+      - code: 8
+        label: >
+          Paradigma būdvardžiams iš subūdvardėjusių veik. r. būtojo l. dalyvių
+          su  -ęs, pvz.: pasileidęs
+      - code: 9
+        label: >
+          Paradigma būdvardžiams iš subūdvardėjusių neveik. r. esamojo l.
+          įvardžiuotinių dalyvių su [-(i)am-, -im-, -om-] +  -asis, pvz.:
+          patariamasis, stojamasis, mokomasis
+      - code: 10
+        label: >
+          Paradigma būdvardžiams iš subūdvardėjusių neveik. r. būtojo l.
+          įvardžiuotinių dalyvių su  -tasis, pvz.: išrinktasis
+      - code: 11
+        label: >
+          Paradigma būdvardžiui iš skaitvardžio abu su  -oks, pvz.: abejoks
+    - code: 5
+      label: Laipsniavimo charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Būdvardis nekaitomas, nelaipsniuojamas; gali būti laikoma, kad
+          laipsnio kategorijos neturi arba kad yra nelyginamojo laipsnio, pvz.:
+          bordo
+      - code: 1
+        label: >
+          laipsniuojamas, įgyja visus laipsnius, pvz.: gražus
+      - code: 2
+        label: >
+          nelaipsniuojamas; žodynuose pateikiamas nelyginamojo laipsnio, pvz.:
+          aukštielninkas
+      - code: 3
+        label: >
+          nelaipsniuojamas; žodynuose pateikiamas aukščiausiojo laipsnio, pvz.:
+          apačiausias
+      - code: 4
+        label: >
+          laipsniuojamas, bet nelyg. lpsn. neturi; žodynuose pateikiamas
+          aukštesniojo laipsnio, pvz.: paskesnis
+      - code: 5
+        label: >
+          laipsniuojamas, bet nelyg. lpsn. neturi; žodynuose pateikiamas
+          aukščiausiojo laipsnio, pvz.: viršiausias
+      - code: 6
+        label: >
+          laipsniuojamas, bet nelyg. lpsn. neturi; žodynuose pateikiamas
+          aukštėlesniojo laipsnio, pvz.: viršėlesnis
+    - code: 6
+      label: Apibrėžtumas (įvardžiuotinumas)
+      nodes:
+      - code: 0
+        label: >
+          būdvardis nekaitomas: apibrėžtumo požymio neturi, pvz.: bordo
+      - code: 1
+        label: >
+          įgyja ir neįvardžiuotines, ir įvardžiuotines formas; žodynuose
+          pateikiamas neįvardžiuotinės formos, pvz.: gražus
+      - code: 2
+        label: >
+          įgyja ir neįvardžiuotines, ir įvardžiuotines formas; žodynuose
+          pateikiamas įvardžiuotine forma, pvz.: gotiškasis
+      - code: 3
+        label: >
+          nelyg. laipsnyje turi tik neįvardžiuotines formas; kituose - ir
+          tokias, ir tokias, pvz.: didelis: didesnis,  ‑esnysis, ‑iausiasis
+      - code: 4
+        label: >
+          turi tik neįvardžiuotines formas, pvz.: dvišakas
+      - code: 5
+        label: >
+          žodynuose pateikiamas įvardžiuotine forma; turi tik įvardžiuotines
+          formas, pvz.: taikomasis
+    - code: 7
+      label: Kaitymas gimine
+      nodes:
+      - code: 0
+        label: >
+          būdvardis nekaitomas; galima laikyti, kad giminės kategorijos neturi,
+          pvz.: bordo
+      - code: 1
+        label: >
+          turi visas gimines: vyr., mot., bevard., pvz.: gražus
+      - code: 2
+        label: >
+          įgyja visas gimines (teoriškai) - vyr., mot., bevard.; žodynuose
+          pateikiamas ir paprastai vartojamas moteriškąja gimine, pvz.: nėščia
+      - code: 3
+        label: >
+          įgyja vyr., mot. gim; bevardės neturi, pvz.: baltažiedis
+      - code: 4
+        label: >
+          turi vyr, mot. gim. (bevard. neturi); žodynuose pateikiamas ir
+          paprastai vartojamas moteriškąja gimine, pvz.: barbitūrinė,
+          šviežiapienė
+      - code: 5
+        label: >
+          įgyja visas gimines: vyr., mot., bevard.; išskyrus nelyginamąjį
+          laipsnį, kuriame bevardės giminės nėra, pvz.: kairys, dešinys
+    - code: 8
+      label: Prefiksavimas
+      nodes:
+      - code: 0
+        label: >
+          žodynuose pateikiamas be neig. prefikso; neigiamų formų neturi, pvz.:
+          ekstra, bruto
+      - code: 1
+        label: >
+          žodynuose pateikiamas be neig. prefikso; gali turėti: beprefiksines
+          formas, formas su ne- , nebe- , tebe- ir t.t., pvz.: gražus: gražus;
+          negražus, nebegražus, tebegražus
+      - code: 2
+        label: >
+          žodyne pateiktas su neig. prefiksu a-; vartojamas ir be šito
+          prefikso; gali turėti: beprefiksines formas, formas su a-, formas su
+          ne-, nebe-, tebe- ir t.t., pvz.: atipiškas: tipiškas; atipiškas;
+          netipiškas, nebetipiškas, tebetipiškas ir t.t.
+      - code: 3
+        label: >
+          žodyne pateiktas su neig. prefiksu be-; vartojamas ir be šito
+          prefikso; gali turėti: beprefiksines formas, formas su be-, formas su
+          ne-, nebe-, tebe- ir t.t., pvz.: beatodairiškas: atodairiškas;
+          beatodairiškas; neatodairiškas, nebeatodairiškas, tebeatodairiškas ir
+          t.t.
+      - code: 4
+        label: >
+          žodyne pateiktas su neig. prefiksu be-; be šito prefikso jis
+          nevartojamas; gali turėti: formas su be-, formas su nebe-, tebebe- ir
+          t.t.:  , pvz.: beširdiškas: nebeširdiškas-nebebeširdiškas ir t.t.
+      - code: 5
+        label: >
+          žodyne pateiktas su neig. prefiksu ne-; vartojamas ir be šito
+          prefikso; gali turėti: beprefiksines formas, formas su ne- , nebe- ,
+          tebe- ir t.t., pvz.: neblogas: blogas-neblogas-nebeblogas-tebeblogas
+          ir t.t.
+      - code: 6
+        label: >
+          žodyne pateiktas su neig. prefiksu ne-; be šito prefikso jis
+          nevartojamas; gali turėti: formas su ne-, formas su tebene- , pvz.:
+          nerimastingas: nerimastingas-tebenerimastingas
+      - code: 7
+        label: >
+          žodyne pateiktas su neig. prefiksu anti-; vartojamas ir be šito
+          prefikso; gali turėti: beprefiksines formas, formas su anti-, formas
+          su neanti- , nebeanti- , tebeanti- ir t.t., pvz.: antihigieninis:
+          higieninis, antihigieninis, neantihigieninis-nebeantihigieninis,
+          tebeantihigieninis ir t.t.
+    - code: 9
+      label: Darybos charakteristika
+      nodes:
+      - code: 0
+        label: >
+          pamatinis, nepadarytas iš nieko būdvardis, pvz.: geras
+      - code: 1
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑iškas, pvz.: angliškas
+      - code: 2
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑inis, pvz.: auksinis
+      - code: 3
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑uotas, pvz.: ginkluotas
+      - code: 4
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑ingas, pvz.: grėsmingas
+      - code: 5
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑ėtas, pvz.: kaulėtas
+      - code: 6
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑ietiškas, pvz.: rytietiškas
+      - code: 7
+        label: >
+          padarytas iš daiktavardžio su priesaga ‑otas, pvz.: pilvotas
+      - code: 8
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑utėlis, pvz.:
+          aklutėlis
+      - code: 9
+        label: >
+          padarytas iš būdvardžio su priešdėliu apy‑, pvz.: apymažis
+      - code: 10
+        label: >
+          padarytas iš būdvardžio su priesaga ‑okas, pvz.: mažokas
+      - code: 11
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ėlis, pvz.: mažėlis
+      - code: 12
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑iukas, pvz.: mažiukas
+      - code: 13
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑iulis, pvz.: mažiulis
+      - code: 14
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ylis, pvz.: mažylis
+      - code: 15
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ytis, pvz.: mažytis
+      - code: 16
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑utis, pvz.: mažutis
+      - code: 17
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑utytis, pvz.:
+          mažutytis
+      - code: 18
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ytėlis, pvz.:
+          plonytėlis
+      - code: 19
+        label: >
+          padarytas iš būdvardžio su priešdėliu po‑, pvz.: pomažis
+      - code: 20
+        label: >
+          padarytas iš būdvardžio su priešdėliu prie‑, pvz.: priekvailis
+      - code: 21
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑utėlaitis, pvz.:
+          sausutėlaitis
+      - code: 22
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ulis, pvz.:
+          apskritulis
+      - code: 23
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑ytėlaitis, pvz.:
+          baltytėlaitis
+      - code: 24
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga ‑užėlis, pvz.:
+          raitužėlis (KZ kld)
+      - code: 25
+        label: >
+          padarytas iš būdvardžio su ‑ut, pvz.: naujut
+      - code: 26
+        label: >
+          padarytas iš būdvardžio su priesaga ‑iškas, pvz.: savitarpiškas
+      - code: 27
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑inis, pvz.: pirminis
+      - code: 28
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑opas, pvz.: vieneriopas
+      - code: 29
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑gubas, pvz.: viengubas
+      - code: 30
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑linkas, pvz.: vienlinkas
+      - code: 31
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑oks, pvz.: abejoks
+      - code: 32
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑ainis, pvz.: dvejetainis
+      - code: 33
+        label: >
+          padarytas iš skaitvardžio su priesaga ‑gubinis, pvz.: dvigubinis
+      - code: 34
+        label: >
+          padarytas iš įvardžio su priesaga ‑iškas, pvz.: jūsiškas
+      - code: 35
+        label: >
+          padarytas iš įvardžio su priesaga ‑opas, pvz.: keleriopas
+      - code: 36
+        label: >
+          padarytas iš įvardžio su priesaga ‑gubas, pvz.: keliagubas
+      - code: 37
+        label: >
+          padarytas iš įvardžio su priesaga ‑inis, pvz.: kelintinis
+      - code: 38
+        label: >
+          subūdvardėjęs, iš dalyvio, pvz.: sukalbamas, užkrečiamas, suaugęs,
+          išrinktasis
+      - code: 39
+        label: >
+          padarytas iš ko nors su priešdėliu a-, pvz.: atipiškas
+      - code: 40
+        label: >
+          padarytas iš ko nors su priešdėliu be-, pvz.: beatodairiškas
+      - code: 41
+        label: >
+          padarytas iš ko nors su priešdėliu ne-, pvz.: neblogas
+      - code: 42
+        label: >
+          subūdvardėjęs iš dalyvio; plius su priešd. ne-, pvz.: nesukalbamas,
+          neabejojamas, nelyginamasis
+      - code: 43
+        label: >
+          padarytas iš būdvardžio su priesaga -elis, pvz.: didelis
+      - code: 44
+        label: >
+          padarytas iš ko nors su priešdėliu anti-, pvz.: antihigieninis
+      - code: 45
+        label: >
+          padarytas iš daiktavardžio su priesaga -ingas; plius su neigiamu
+          priešdėliu ne-, pvz.: neturtingas
+      - code: 46
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškas; plius su neigiamu
+          priešdėliu be-, pvz.: bedieviškas, bejėgiškas
+      - code: 47
+        label: >
+          padarytas iš daiktavardžio su priesaga -inis; plius su neigiamu
+          priešdėliu a-, pvz.: asimetrinis
+      - code: 48
+        label: >
+          padarytas iš daiktavardžio su priesaga -iškas; plius su neigiamu
+          priešdėliu a-, pvz.: asimetriškas
+      - code: 49
+        label: >
+          padarytas iš daiktavardžio su priesaga -inis; plius su neigiamu
+          priešdėliu ne-, pvz.: nepartinis
+      - code: 50
+        label: >
+          padarytas iš daiktavardžio su -iškas; plius su neigiamu priešdėliu
+          ne-, pvz.: nemokšiškas
+      - code: 51
+        label: >
+          mažybinis, padarytas iš būdvardžio su priesaga -utis; plius su
+          neigiamu priešdėliu ne-, pvz.: nekaltutis, nedidutis
+    - label: Derivacijos charakteristika
+      nodes:
+      - code: 10
+        label: Deminutyviniai vediniai
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 11
+        label: Daiktavardžio vediniai su ‑okas
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 12
+        label: Daiktavardžio vediniai su ‑umas
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 13
+        label: Daiktavardžio vediniai su ‑ybė
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 14
+        label: Daiktavardžio vediniai su ‑ystė
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 15
+        label: Prieveiksmio vediniai su ‑(i)ai
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 16
+        label: Prieveiksmio vediniai su ‑yn
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+      - code: 17
+        label: Būdvardžio vediniai su priešdėliais apy‑ (api‑)
+        nodes:
+        - code: 0
+          label: būdvardis tokių vedinių neturi
+        - code: 1
+          label: turi
+- code: 3
+  name: numeral
+  symbol: num
+  label: Skaitvardis
+  nodes:
+  - label: Skaitvardžio ypatumai
+    nodes:
+    - code: 4
+      label: Skyrius
+      nodes:
+      - code: 1
+        label: kiekiniai
+      - code: 2
+        label: dauginiai
+      - code: 3
+        label: kuopiniai
+      - code: 4
+        label: kelintiniai
+    - code: 5
+      label: Linksnio ir skaičiaus valdymas
+      nodes:
+      - code: 0
+        label: Nieko nevaldo
+      - code: 1
+        label: Reikalauja vienaskaitos kilmininko
+      - code: 2
+        label: Reikalauja daugiskaitos kilmininko
+      - code: 3
+        label: Reikalauja dviskaitos
+  - label: Kaitybos charakteristika
+    nodes:
+    - code: 6
+      label: Linksniavimo charakteristika
+      nodes:
+      - code: 1
+        label: >
+          Žiūr. DLKG §711 psl. 245: vyr.g.vnsk.K: -o; vyr.g.dgsk.K: -ų;
+          mot.g.vnsk.K: -os; mot.g.dgsk.K: -ų, pvz.: pusantro
+      - code: 2
+        label: >
+          Žiūr. DLKG §711 psl. 245: vyr.g.vnsk.K: -io; vyr.g.dgsk.K: -ių;
+          mot.g.vnsk.K: -ios; mot.g.dgsk.K: -ių, pvz.: pustrečio
+      - code: 3
+        label: >
+          Kaip a (vyr.g.) ir o (mot.g.) linksniuočių būdvardžiai: vyr.g. - bdv
+          linksniavimo 1 paradigma pgl (žiūr. DLKG §552 psl.179); mot.g. - bdv
+          linksniavimo 6 paradigma pgl (žiūr. DLKG §556 psl.182), pvz.:
+          dušimtas, pirmas, vienas, ketvirtas
+      - code: 4
+        label: >
+          Kaip ia (vyr.g.) ir io (mot.g.) linksniuočių būdvardžiai: vyr.g. -
+          bdv linksniavimo 3 paradigma pgl (žiūr. DLKG §552 psl.179); mot.g. -
+          bdv linksniavimo 9 paradigma pgl (žiūr. DLKG §556 psl.184), pvz.:
+          pirmesnis, vieneri
+      - code: 5
+        label: >
+          Kaip ia (vyr.g.) ir io (mot.g.) linksniuočių būdvardžiai: vyr.g. -
+          bdv linksniavimo 2 paradigma pgl (žiūr. DLKG §552 psl.179); mot.g. -
+          bdv linksniavimo 7 paradigma pgl (žiūr. DLKG §556 psl.183), pvz.:
+          pirmiausias, trečias
+      - code: 6
+        label: >
+          Kaip a linksniuotės daiktavardžiai, linksniavimo 1 paradigma
+          (žiūr.DLKG §119 psl.70), pvz.: abejetas, šimtas
+      - code: 7
+        label: >
+          Žiūr. DLKG §718 psl. 247, pvz.: abu, du
+      - code: 8
+        label: >
+          Žiūr. DLKG §719 psl. 247, pvz.: trys
+      - code: 9
+        label: >
+          Žiūr. DLKG §720 psl. 247, pvz.: keturi
+      - code: 10
+        label: >
+          dešimt(-s, -is): žiūr. DLKG §711psl.245, §721psl.248:; kaip mot.g. i
+          linksniuotės dktv (plg. paslaptis: 9 paradigma pgl. žiūr DLKG
+          §131psl.76; plius turi nelinksniuojamą formą dešimt(s), pvz.:
+          dešimt(-s, -is)
+      - code: 11
+        label: >
+          11-19: žiūr. DLKG §722 psl. 248, pvz.: vienuolika, devyniolika
+      - code: 12
+        label: >
+          1000: žiūr. DLKG §723 psl.248: kaip (i)a linksniuotės daiktavardžiai,
+          linksniavimo 3 paradigma pgl žiūr.DLKG §119 psl.71, pvz.: tūkstantis
+
+    - code: 7
+      label: Giminės charakteristika
+      nodes:
+      - code: 1
+        label: >
+          Turi vyr. ir mot. giminę, pvz.: pusantro, pustrečio
+      - code: 2
+        label: >
+          Turi vyr., mot. ir bevardę giminę, pvz.: trečias
+      - code: 3
+        label: >
+          Giminėmis nekaitomas (galima traktuoti, kad giminės kategorijos
+          neturi ?); linksniuojamas įgyja daiktavardiškas vyr. g. formas, pvz.:
+          abejetas, šimtas
+      - code: 4
+        label: >
+          Giminėmis nekaitomas (galima traktuoti, kad giminės kategorijos
+          neturi ?); linksniuojamas įgyja daiktavardiškas mot. g. formas; žiūr.
+          DLKG §709, psl.244., pvz.: dešimt(is), vienuolika
+    - code: 8
+      label: Skaičiaus charakteristika
+      nodes:
+      - code: 1
+        label: >
+          Turi vienaskaitą ir daugiskaitą, pvz.: pusantro
+      - code: 2
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik daugiskaitą,
+          pvz.: vieneri, trys
+      - code: 3
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik vienaskaitą
+          (linksniuojamas įgyja vyr. g. vnsk. formas), pvz.: abejetas
+      - code: 4
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik daugiskaitą (ar
+          dviskaitą - čia priklauso nuo to kaip pažiūrėsi / sutraktuosi), pvz.:
+          abu, du, dvi
+      - code: 5
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik vienaskaitą
+          (linksniuojamas įgyja mot. g. vnsk. formas), pvz.: vienuolika
+    - code: 9
+      label: Laipsniavimo charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Laipsnio formų neturi (galima laikyti, kad laipsnio kategorija jam
+          neturi prasmės), pvz.: pusantro
+      - code: 1
+        label: >
+          Turi nelyg., aukštesnįjį, aukštėlesnįjį ir aukščiausiąjį laipsnius,
+          pvz.: pirmas
+      - code: 2
+        label: >
+          Žodynuose pateikiamas aukštesniojo laipsnio, taigi, traktuojamas kaip
+          savarankiška leksema; galimas traktavimas, kad turi taip pat nelyg.,
+          aukštėlesn. ir aukščiaus. laipsnius, pvz.: pirmesnis
+      - code: 3
+        label: >
+          Žodynuose pateikiamas aukščiausiojo laipsnio, taigi, traktuojamas
+          kaip savarankiška leksema; galimas traktavimas, kad turi taip pat
+          nelyg., aukštesn. ir aukštėlesnįjį laipsnius, pvz.: pirmiausias
+    - code: 10
+      label: Apibrėžtumo (įvardžiuotinumo) charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Įvardžiuotinių formų neturi; galima laikyti, kad įvardžiuotinumo
+          (apibrėžtumo) požymis neturi prasmės, pvz.: pusantro
+      - code: 1
+        label: >
+          Įgyja tiek neįvardžiuotines,  tiek ir įvardžiuotines formas, pvz.:
+          dušimtas
+  - label: Darybos charakteristika
+    code: 11
+    nodes:
+    - code: 1
+      label: >
+        trupmeninis sktv su dėmeniu pus- [DLKG §711 psl. 245, pvz.: pusantro
+    - code: 2
+      label: >
+        kelintinis sktv iš atitinkamo kiekinio sktv kamieno, pvz.:
+        aštuoniašimtas, trečias
+    - code: 3
+      label: >
+        kelintinis sktv su savarankišku kamienu, pvz.: pirmas, antras
+    - code: 4
+      label: >
+        kelintinio sktv aukštesniojo laipsnio forma iš nelyginamojo laipsnio,
+        pvz.: pirmesnis
+    - code: 5
+      label: >
+        kelintinio sktv aukščiausiojo laipsnio forma iš nelyg laipsnio, pvz.:
+        pirmiausias
+    - code: 6
+      label: >
+        kiekinis sktv su savarankišku kamienu, pvz.: vienas, du, trys, šimtas
+    - code: 7
+      label: >
+        dauginis sktv iš atitinkamo kiekinio sktv kamieno, pvz.: vieneri
+    - code: 8
+      label: >
+        kuopinis sktv iš atitinkamo kiekinio, pvz.: abejetas
+    - code: 9
+      label: >
+        11-19: sktv su sandu -lika (DLKG §709 psl. 244), pvz.: vienuolika,
+        devyniolika
+    - code: 10
+      label: >
+        10-90: kiekiniai dešimčių pavadinimai su sandu ()‑dešimt(-s, -is),
+        pvz.: dešimt(-s, -is)
+  - label: Derivacijos charakteristika
+    nodes:
+    - code: 12
+      label: Atitikmenų buvimas kituose skyriuose
+      nodes:
+      - code: 1
+        label: >
+          Kiekinis, atitikmenų kituose skyriuose neturi, pvz.: pusantro
+      - code: 2
+        label: >
+          Kelintinis, atitikmenų kituose skyriuose neturi, pvz.: dušimtas
+      - code: 3
+        label: >
+          Kelintinis, turi atitikmenis kiekinių ir dauginių skaitvardžių
+          skyriuose, pvz.: pirmas
+      - code: 4
+        label: >
+          Kiekinis, turi atitikmenis dauginių ir kelintinių skaitvardžių
+          skyriuose, pvz.: vienas
+      - code: 5
+        label: >
+          Dauginis, turi atitikmenis kiekinių ir kelintinių skaitvardžių
+          skyriuose, pvz.: vieneri
+      - code: 6
+        label: >
+          Kuopinis, turi atitikmenis kiekinių ir dauginių skaitvardžių
+          skyriuose, pvz.: abejetas
+      - code: 7
+        label: >
+          Dauginis, turi atitikmenis kiekinių ir kuopinių skaitvardžių
+          skyriuose, pvz.: abeji
+      - code: 8
+        label: >
+          Kiekinis, turi atitikmenis kuopinių ir dauginių skaitvardžių
+          skyriuose, pvz.: abu
+      - code: 9
+        label: >
+          Kelintinis, turi atitikmenis kiekinių, dauginių ir kuopinių
+          skaitvardžių skyriuose (t.y. visuose), pvz.: antras
+      - code: 10
+        label: >
+          Kiekinis, turi atitikmenis kelintin, dauginių ir kuopinių
+          skaitvardžių skyriuose (t.y. visuose), pvz.: du, trys
+      - code: 11
+        label: >
+          Kuopinis, turi atitikmenis kiekinių, kelintinių ir dauginių
+          skaitvardžių skyriuose (t.y. visuose), pvz.: dvejetas, trejetas
+      - code: 12
+        label: >
+          Dauginis, turi atitikmenis kiekinių, kelintinių ir kuopinių
+          skaitvardžių skyriuose (t.y. visuose), pvz.: dveji, treji
+      - code: 13
+        label: >
+          Kiekinis, turi atitikmenį kelintinių skaitvardžių skyriuje, pvz.:
+          dešimt, šimtas
+      - code: 14
+        label: >
+          Kelintinis, turi atitikmenį kiekinių skaitvardžių skyriuje, pvz.:
+          dešimtas, tūkstantas
+    - code: 13
+      label: Deminutyviniai vediniai
+      nodes:
+      - code: 1
+        label: >
+          Mažybinių vedinių neturi, pvz.: pusantro
+      - code: 2
+        label: >
+          Turi atitikmenis (=iš jų gali būti išvedami) daiktavardžius
+          deminutyvus penktukas, penktukėlis ir t.t. iš penktas; dešimtukas iš
+          dešimtis (dešimtas?);, pvz.: šimtelis iš šimtas
+    - code: 14
+      label: Būdvardžio vedinių su -iškas galimumas
+      nodes:
+      - code: 0
+        label: tokių vedinių neturi
+      - code: 1
+        label: turi
+    - code: 15
+      label: Būdvardžio vedinių su -inis galimumas
+      nodes:
+      - code: 0
+        label: tokių vedinių neturi
+      - code: 1
+        label: turi
+    - code: 16
+      label: Prieveiksmio vedinių su -in(i)ai galimumas
+      nodes:
+      - code: 0
+        label: tokių vedinių neturi
+      - code: 1
+        label: turi
+- code: 4
+  name: pronoun
+  symbol: prn
+  label: Įvardis
+  nodes:
+  - code: 4
+    label: Įvardžio grupė
+    nodes:
+    - code: 1
+      label: >
+        apibendrinamasis teigiamasis, funkcija: gali atlikti tiek būdvardžio,
+        tiek ir daiktavardžio funkciją
+    - code: 2
+      label: >
+        klausiamasis santykinis, funkcija: dktv
+    - code: 3
+      label: >
+        neapibrėžiamasis nežymimasis, funkcija: dktv
+    - code: 4
+      label: >
+        neapibrėžiamasis nežymimasis, funkcija: bdv
+    - code: 5
+      label: >
+        asmeninis savybinis, funkcija: bdv
+    - code: 6
+      label: >
+        apibendrinamasis neigiamasis, funkcija: dktv
+    - code: 7
+      label: >
+        klausiamasis santykinis neapibrėžiamasis nežymimasis, funkcija: ir
+        bdvr, ir dktv
+    - code: 8
+      label: >
+        apibendrinamasis teigiamasis, funkcija: dktv
+    - code: 9
+      label: >
+        asmeninis pagrindinis, funkcija: dktv
+    - code: 10
+      label: >
+        apibendrinamasis neigiamasis, funkcija: ir bdvr, ir dktv
+    - code: 11
+      label: >
+        neapibrėžiamasis nežymimasis, funkcija: ir bdvr, ir dktv
+    - code: 12
+      label: >
+        klausiamasis santykinis neapibrėžiamasis nežymimasis, funkcija: dktv
+    - code: 13
+      label: >
+        parodomasis apibrėžiamasis, funkcija: bdvr
+    - code: 14
+      label: >
+        apibendrinamasis neigiamasis, funkcija: bdvr
+    - code: 15
+      label: >
+        neapibrėžiamasis atskiriamasis, funkcija: bdvr
+    - code: 16
+      label: >
+        klausiamasis santykinis neapibrėžiamasis nežymimasis, funkcija: bdvr
+    - code: 17
+      label: >
+        apibendrinamasis teigiamasis, funkcija: bdvr
+    - code: 18
+      label: >
+        neapibrėžiamasis atskiriamasis, funkcija: ir bdvr, ir dktv
+    - code: 19
+      label: >
+        asmeninis pagrindinis neapibrėžiamasis pabrėžiamasis, funkcija: ir
+        bdvr, ir dktv
+    - code: 20
+      label: >
+        parodomasis apibrėžiamasis, funkcija: ir bdvr, ir dktv
+    - code: 21
+      label: >
+        parodomasis apibrėžiamasis, funkcija: 
+    - code: 22
+      label: >
+        asmeninis pagrindinis; negimininis, funkcija: dktv
+    - code: 23
+      label: >
+        sangrąžinis; negimininis, funkcija: dktv
+  - label: Kaitybos charakteristika
+    nodes:
+    - code: 5
+      label: Linksniavimo charakteristika
+      nodes:
+      - code: 1
+        label: >
+          vyr: Įvardžių linksniavimo 2 paradigma pagal DLKG §797 psl.274; mot:
+          Įvardžių linksniavimo 6 paradigma pagal DLKG §800 psl.276; pvz.:
+          ikvienas, tamsta
+      - code: 2
+        label: >
+          vyr: 1 paradigma pagal DLKG §797 psl.274 su vienu (nesavybiniu)
+          kilmininku; mot: 6 paradigma pagal DLKG §800 psl.276; pvz.: kas,
+          katras
+      - code: 3
+        label: >
+          vyr: 4 paradigma pagal DLKG §797 psl.275; mot: 8 paradigma pagal DLKG
+          §800 psl.277; pvz.: kuris, jis
+      - code: 4
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: maniškis
+      - code: 5
+        label: >
+          vyr: 3 paradigma pagal DLKG §797 psl.275; mot: 7 paradigma pagal DLKG
+          §800 psl.276; pvz.: anoks
+      - code: 6
+        label: >
+          vyr: Žiūr. DLKG97 §806-7 psl.281-2; mot: Žiūr. DLKG97 §806-7
+          psl.281-2; pvz.: manasis
+      - code: 7
+        label: >
+          vyr: 5 paradigma pagal DLKG §799 psl.276; mot: 8 paradigma pagal DLKG
+          §800 psl.277; pvz.: pats
+      - code: 8
+        label: >
+          Dviskaitos linksniavimo 2 paradigma, žiūr. DLKG §804 psl.280; pvz.:
+          jiedu
+      - code: 9
+        label: >
+          Žiūr. DLKG97 §795 psl.272-3; pvz.: aš
+      - code: 10
+        label: >
+          Dviskaitos linksniavimo 1 paradigma, žiūr. DLKG §804 psl.279; pvz.:
+          mudu
+      - code: 11
+        label: >
+          Žiūr. DLKG97 §795 psl.272-3; pvz.: tu
+      - code: 12
+        label: >
+          Žiūr. DLKG97 §795 psl.272; pvz.: savęs
+      - code: 13
+        label: >
+          1 paradigma pagal DLKG §797 psl.274 su dviem kilmininkais:
+          nesavybiniu (pvz., ko) ir savybiniu (pvz., kieno); pvz.: kas (kieno)
+      - code: 14
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: keleri
+      - code: 15
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: keletas
+      - code: 16
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: keli
+      - code: 17
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: kelintas
+      - code: 18
+        label: >
+          Linksniavimo paradigma įvardžiui keliasdešimt(-s, -is); pvz.:
+          keliasdešimt (-s, -is)
+      - code: 19
+        label: >
+          Žiūr. DLKG97 §801 psl.278; pvz.: keliolika
+
+    - code: 6
+      label: Giminės charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Giminė neapibrėžta (galima laikyti, kad giminės kategorija jam neturi
+          prasmės); pvz.: kame
+      - code: 1
+        label: >
+          Turi vyr., mot. ir bevardę giminę; pvz.: ikvienas
+      - code: 2
+        label: >
+          Giminėmis nekaitomas (galima traktuoti, kad giminės kategorijos
+          neturi); linksniuojamas įgyja daiktavardiškas mot. g. formas); pvz.:
+          tamsta
+      - code: 3
+        label: >
+          Turi vyr. ir mot. gim. (bevardės neturi); pvz.: katras
+      - code: 4
+        label: >
+          Giminėmis nekaitomas (galima traktuoti, kad giminės kategorijos
+          neturi); linksniuojamas įgyja daiktavardiškas vyr. g. formas); pvz.:
+          keletas
+    - code: 7
+      label: Skaičiaus charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Skaičius neapibrėžtas (galima laikyti, kad skaičiaus kategorija jam
+          neturi prasmės); pvz.: kame
+      - code: 1
+        label: >
+          Turi vienaskaitą ir daugiskaitą; pvz.: ikvienas
+      - code: 2
+        label: >
+          Turi vienaskaitą, daugiskaitą ir dviskaitą; pvz.: jie
+      - code: 3
+        label: >
+          Įvardžio dviskaita; galimos atitinkamos vnsk. ir dgsk. formos; pvz.:
+          jiedu
+      - code: 4
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik daugiskaitą;
+          pvz.: keleri
+      - code: 5
+        label: >
+          Skaičiumi nekaitomas; galima traktuoti, kad turi tik vienaskaitą;
+          pvz.: keletas
+    - code: 8
+      label: Apibrėžtumo (įvardžiuotinumo) charakteristika
+      nodes:
+      - code: 0
+        label: >
+          Įvardžiuotinių formų neturi (=įvardžiuotinumo (apibrėžtumo) požymis
+          jam neturi prasmės); pvz.: ikvienas
+      - code: 1
+        label: >
+          Neįvardžiuotinis, gali įgyti įvardžiuotines formas; pvz.: manas
+      - code: 2
+        label: >
+          Įvardžiuotinis, turi neįvardžiuotinius atitikmenis; pvz.: manasis
+      - code: 3
+        label: >
+          Neįvardžiuotinis; įvardžiuotinę įgyja tik vyr.g. vnsk V formą (DLKG97
+          §807, psl.282); pvz.: pats
+  - label: Derivacijos charakteristika
+    nodes:
+    - code: 9
+      label: Priešdėlio ne- galimumas
+      nodes:
+      - code: 0
+        label: >
+          tokių vedinių neturi
+      - code: 1
+        label: >
+          turi
+    - code: 10
+      label: Deminutyviniai vediniai
+      nodes:
+      - code: 1
+        label: >
+          Mažybinių vedinių neturi; pvz.: katras
+      - code: 2
+        label: >
+          Iš jų gali būti išvedamos mažybinės formos; pvz.: tamsta-tamstelė
+- code: 5
+  name: verb
+  symbol: vblex
+  label: Veiksmažodis
+  nodes:
+  - label: Kaitybos charakteristika
+    nodes:
+    - label: >
+        Veiksmažodžių kaitybos (asmenavimo) charakteristika (nusakoma pagal
+        žiūr. DLKG97 psl.334-337).
+      nodes:
+      - code: 4
+        label: >
+          tipo nr., pagal kamieno sandarą; galimos reikšmės: žiūr. DLKG97
+          psl.325
+        nodes:
+        - code: 1
+        - code: 2
+        - code: 3
+      - code: 5
+        label: >
+          asmenuotės nr.; galimos reikšmės: žiūr. DLKG97 psl.334-337
+        nodes:
+        - code: 1
+        - code: 2
+        - code: 3
+      - code: 6
+        label: >
+          grupės nr. asmenuotėje; galimos reikšmės: žiūr. DLKG97 psl.334-337;
+          II-oje asmenuotėje veiksmažodžiai negrupuojami - šiuo atveju grupės
+          nr. visada lygus 1
+        nodes:
+        - code: 1
+        - code: 2
+        - code: 3
+        - code: 4
+      - code: 7
+        label: >
+          pogrupio nr. grupėje; galimos reikšmės: žiūr. DLKG97 psl.334-337;
+          pogrupio nr. lygus 1, jei asmenuotėje veiksmažodžiai negrupuojami ar
+          grupės neskaidomos į pogrupius; pogrupio nr. lygus 0, jei jį
+          nustatyti automatiškai pasirodė neįmanoma
+        nodes:
+        - code: 0
+        - code: 1
+        - code: 2
+        - code: 3
+        - code: 4
+        - code: 5
+        - code: 6
+        - code: 7
+        - code: 8
+    - code: 8
+      label: Prefiksas
+      nodes:
+      - code: 0
+        value: ''
+      - code: 1
+        value: ap
+      - code: 2
+        value: api
+      - code: 3
+        value: at
+      - code: 4
+        value: atsi
+      - code: 5
+        value: iš
+      - code: 6
+        value: išsi
+      - code: 7
+        value: į
+      - code: 8
+        value: nu
+      - code: 9
+        value: pa
+      - code: 10
+        value: per
+      - code: 11
+        value: pra
+      - code: 12
+        value: prasi
+      - code: 13
+        value: pri
+      - code: 14
+        value: su
+      - code: 15
+        value: už
+      - code: 16
+        value: užsi
+      - code: 17
+        value: ati
+      - code: 18
+        value: persi
+      - code: 19
+        value: apsi
+      - code: 20
+        value: įsi
+      - code: 21
+        value: ne
+      - code: 22
+        value: nusi
+      - code: 23
+        value: par
+      - code: 24
+        value: pasi
+      - code: 25
+        value: prisi
+      - code: 26
+        value: sune
+      - code: 27
+        value: susi
+      - code: 28
+        value: neapsi
+      - code: 29
+        value: parsi
+      - code: 30
+        value: nesi
+      - code: 31
+        value: neap
+    - code: 9
+      label: Prefiksavimo charakteristika
+      nodes:
+      - code: 1
+        label: >
+          p, Np, NBp, Bp, BNp, Tp, TBp, TBNp; pS, NpS, NBpS, BpS, BNpS, TpS,
+          TBpS, TBNpS; pvz.: apgulti, aparti, išlipti, iškoneveikti
+      - code: 2
+        label: >
+          api, Napi, NBapi, Bapi, BNapi, Tapi, TBapi, TBNapi; apS, NapS, NBapS,
+          BapS, BNapS, TapS, TBapS, TBNapS; pvz.: apibarti, apiburbti
+      - code: 3
+        label: >
+          p, Np, NBp, Bp, BNp, Tp,     TBp, TBNp; nėra; pvz.: atgulti,
+          atidirbti, atlipti, apibaubėti, apeiti
+      - code: 4
+        label: >
+          nėra; pS, NpS, NBpS, BpS, BNpS, TpS,    TBpS, TBNpS; pvz.: atsigulti,
+          įsiloti, išsigiedrinti
+      - code: 5
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; +, NS, NBS, BS, BNS, TS, TNS, TBS,
+          TBNS; pvz.: barti, čiulpti, groti, koneveikti
+      - code: 6
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; nėra; pvz.: kalti, lipti, aiktelėti,
+          baubti, dantinėti
+      - code: 7
+        label: >
+          nėra; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; pvz.: kaltis,
+          gaidrintis, žentintis
+      - code: 8
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; su priešdėliais: f, Nf, NBf, Bf,
+          BNf, Tf, TBf, TBNf; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešd: fS, NfS, NBfS, BfS, BNfS, TfS, TBfS, TBNfS; pvz.:
+          absoliutinti
+      - code: 9
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: h, Nh, NBh, Bh,
+          BNh, Th, TBh, TBNh; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešd: gS, NgS, NBgS, BgS, BNgS, TgS, TBgS, TBNgS; pvz.: anodinti
+      - code: 10
+        label: >
+          ati, Nati, NBati, Bati, BNati, Tati, TBati, TBNati; atS, NatS, NBatS,
+          BatS, BNatS, TatS, TBatS, TBNatS; pvz.: atidanginti
+      - code: 11
+        label: >
+          +,  N, NB, B, BN, T, TN, TB, TBN; su priešdėliais: g,  Ng, NBg, Bg,
+          BNg, Tg,     TBg, TBNg; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešd: gS, NgS, NBgS, BgS, BNgS, TgS, TBgS, TBNgS; pvz.: automatinti
+      - code: 12
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; su priešdėliais: f, Nf, NBf, Bf,
+          BNf, Tf, TBf, TBNf; fS, NfS, NBfS, BfS, BNfS, TfS, TBfS, TBNfS; pvz.:
+          azartinti
+      - code: 13
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; su priešdėliais: g, Ng, NBg, Bg,
+          BNg, Tg,     TBg, TBNg; su priešdėliais: gS, NgS, NBgS, BgS, BNgS,
+          TgS, TBgS, TBNgS; pvz.: bolševikinti
+      - code: 14
+        label: >
+          +, N, NB, B, BN, T, TN, TB, TBN; su priešdėliais: r, Nr, NBr, Br, BNr
+          Tr, TBr, TBNr; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: gS, NgS, NBgS, BgS, BNgS, TgS,    TBgS, TBNgS; pvz.:
+          fluorinti
+      - code: 15
+        label: >
+          N, NB, BN, TN, TBN; nėra; pvz.: neraminti, negeruoti
+      - code: 16
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: h, Nh, NBh, Bh,
+          BNh, Th, TBh, TBNh; su priešdėliais: gS, NgS, NBgS, BgS, BNgS, TgS,
+          TBgS, TBNgS; pvz.: revoliucinti
+      - code: 17
+        label: >
+          pN, BpN, TpN, TBpN; pSN, BpSN, TpSN, TBpSN; pvz.: sunepatoginti
+      - code: 18
+        label: >
+          pN, BpN, TpN, TBpN; nėra; pvz.: sunegražėti
+      - code: 19
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: r, Nr, NBr, Br,
+          BNr, Tr,     TBr, TBNr; nėra; pvz.: bitumėti
+      - code: 20
+        label: >
+          N; nėra; pvz.: negandotis
+      - code: 21
+        label: >
+          nėra; NapS, NBapS, BNapS, TNapS, TBNapS; pvz.: neapsižiūrėti
+      - code: 22
+        label: >
+          pS_, NpS_, NBpS_, BpS_, BNpS_, TpS_, TBpS_, TBNpS_; nėra; pvz.:
+          apsieiti
+      - code: 23
+        label: >
+          +, N_, NB_, B_, BN_, T_, TN_, TB_, TBN_; NS_, NBS_, BS_, BNS_, TS_,
+          TNS_, TBS_, TBNS_; pvz.: eiti
+      - code: 24
+        label: >
+          p, Np, NBp, Bp, BNp, Tp, TBp, TBNp; pS_, NpS_, NBpS_, BpS_, BNpS_,
+          TpS_, TBpS_, TBNpS_; pvz.: sueiti
+      - code: 25
+        label: >
+          nėra; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su priešdėliais: fS,
+          NfS, NBfS, BfS, BNfS, TfS, TBfS, TBNfS; pvz.: abortuotis
+      - code: 26
+        label: >
+          nėra; +, NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su priešdėliais: gS,
+          NgS, NBgS, BgS, BNgS, TgS,    TBgS, TBNgS; pvz.: asimiliuotis
+      - code: 27
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: x, Nx, NBx, Bx,
+          BNx, Tx,     TBx, TBNx; su priešdėliais: uS, NuS, NBuS, BuS, BNuS,
+          TuS, TBuS, TBNuS; pvz.: blokuoti
+      - code: 28
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: u, Nu, NBu, Bu,
+          BNu, Tu,     TBu, TBNu; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: uS, NuS, NBuS, BuS, BNuS, TuS,    TBuS, TBNuS; pvz.:
+          cementuoti
+      - code: 29
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: v, Nv, NBv, Bv,
+          BNv, Tv,     TBv, TBNv; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: vS, NvS, NBvS, BvS, BNvS, TvS,    TBvS, TBNvS; pvz.:
+          deleguoti
+      - code: 30
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: z, Nz, NBz, Bz,
+          BNz, Tz,     TBz, TBNz; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: kS, NkS, NBkS, BkS, BNkS, TkS,    TBkS, TBNkS; pvz.:
+          dezinfekuoti
+      - code: 31
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: m, Nm, NBm, Bm,
+          BNm, Tm,     TBm, TBNm; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: nS, NnS, NBnS, BnS, BNnS, TnS,    TBnS, TBNnS; pvz.:
+          diriguoti
+      - code: 32
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: n, Nn, NBn, Bn,
+          BNn, Tn,     TBn, TBNn; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: nS, NnS, NBnS, BnS, BNnS, TnS,    TBnS, TBNnS; pvz.:
+          koduoti
+      - code: 33
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: w, Nw, NBw, Bw,
+          BNw, Tw,     TBw, TBNw; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: kS, NkS, NBkS, BkS, BNkS, TkS,    TBkS, TBNkS; pvz.:
+          reguliuoti
+      - code: 34
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: n, Nn, NBn, Bn,
+          BNn, Tn,     TBn, TBNn; su priešdėliais: nS, NnS, NBnS, BnS, BNnS,
+          TnS,    TBnS, TBNnS; pvz.: piketuoti
+      - code: 35
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: c, Nc, NBc, Bc,
+          BNc, Tc,     TBc, TBNc; NS, NBS, BS, BNS, TS, TNS, TBS, TBNS; su
+          priešdėliais: cS, NcS, NBcS, BcS, BNcS, TcS,    TBcS, TBNcS; pvz.:
+          pilotuoti
+      - code: 36
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: d, Nd, NBd, Bd,
+          BNd, Td,     TBd, TBNd; NS, NBS, BS, BNS, TS, TNS,TBS, TBNS; su
+          priešdėliais: cS, NcS, NBcS, BcS, BNcS, TcS,    TBcS, TBNcS; pvz.:
+          transplantuoti
+      - code: 37
+        label: >
+          nėra; NS, NBS, BNS, TNS, TBNS; pvz.: nesitverti
+      - code: 38
+        label: >
+          Nap, NBap, BNap, TBNap; nėra; pvz.: neapkęsti
+      - code: 39
+        label: >
+          bendračiai ir būtajam l.: +, N, NB, B, T, TB, TBN; esamajam l.: a)
+          variantui "yra": n(ėra), Nb(ėra), b(ėra),  t(ėra),  Tb(ėra),
+          TBn(ėra), b) variantui "esti": N_, NB_, B_, T_, TB_, TBN_; nėra;
+          pvz.: tik: būti-yra(esti)-buvo
+      - code: 40
+        label: >
+          +, N, NB, B, BN, T, TN, TB,  TBN; su priešdėliais: c, Nc, NBc, Bc,
+          BNc, Tc,     TBc, TBNc; su priešdėliais: cS, NcS, NBcS, BcS, BNcS,
+          TcS,    TBcS, TBNcS; pvz.: migruoti
+
+    - code: 10
+      label: Sangrąžiškumas
+      nodes:
+      - code: 1
+        label: nesangrąžinis
+      - code: 2
+        label: sangrąžinis
+    - code: 11
+      label: Sangrąžiavimo charakteristika
+      nodes:
+      - code: 1
+        label: >
+          Žodynuose nesangrąžinis; galimos sangrąžinės formos; pvz.: barti,
+          eiti, sueiti
+      - code: 2
+        label: >
+          Žodynuose nesangrąžinis; sangrąžiškumo formos negalimos; pvz.:
+          neraminti, revoliucinti, aiktelėti, sunegražėti,
+      - code: 3
+        label: >
+          Žodynuose sangrąžinis; nesangrąžinės formos negalimos; pvz.:
+          gaidrintis, abortuotis, atsisveikinti
+    - code: 12
+      label: Tranzityvumas
+      nodes:
+      - code: 0
+        label: veiksmažodis intranzityvus (ne galininkinis)
+      - code: 1
+        label: veiksmažodis tranzityvus (galininkinis)
+    - code: 13
+      label: >
+        Ar veiksmažodis turi kelis pagrindinių formų variantus, pvz., kristi
+        (krenta/krinta), krito.
+      nodes:
+      - code: 0
+        label: neturi
+      - code: 1
+        label: turi
+  - label: Derivacijos charakteristika
+    nodes:
+    - code: 14
+      label: Ar iš vksm galima padaryti priesagos -tumas vedinius
+      nodes:
+      - code: 0
+        label: negalima
+      - code: 1
+        label: galima
+    - code: 15
+      label: Ar iš vksm galima padaryti priesagų -tel(ė)ti, -ter(ė)ti vedinius
+      nodes:
+      - code: 0
+        label: negalima
+      - code: 1
+        label: galima
+    - code: 16
+      label: >
+        Darybos charakteristika : padarymo būdo numeris
+      nodes:
+      - code: 0
+        label: iš nieko nepadarytas veiksmažodis be prefikso
+      - code: 1
+        label: priesagos -inti veiksmažodis be prefikso
+      - code: 2
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu ap-
+      - code: 3
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu api-
+      - code: 4
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu at-
+      - code: 5
+        label: iš nieko nepadarytas veiksmažodis su prefiksu atsi-
+      - code: 6
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu iš-
+      - code: 7
+        label: iš nieko nepadarytas veiksmažodis su prefiksu išsi-
+      - code: 8
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu į-
+      - code: 9
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu nu-
+      - code: 10
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu pa-
+      - code: 11
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu per-
+      - code: 12
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu pra-
+      - code: 13
+        label: iš nieko nepadarytas veiksmažodis su prefiksu prasi-
+      - code: 14
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu pri-
+      - code: 15
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu su-
+      - code: 16
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu už-
+      - code: 17
+        label: iš nieko nepadarytas veiksmažodis su prefiksu užsi-
+      - code: 18
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu ati-
+      - code: 19
+        label: iš nieko nepadarytas veiksmažodis su prefiksu persi-
+      - code: 20
+        label: priesagos -inti veiksmažodis su priešdėliu ap-
+      - code: 21
+        label: priesagos -inti veiksmažodis su priešdėliu api-
+      - code: 22
+        label: priesagos -inti veiksmažodis su prefiksu apsi-
+      - code: 23
+        label: priesagos -inti veiksmažodis su priešdėliu at-
+      - code: 24
+        label: priesagos -inti veiksmažodis su priešdėliu ati-
+      - code: 25
+        label: priesagos -inti veiksmažodis su prefiksu atsi-
+      - code: 26
+        label: priesagos -inti veiksmažodis su priešdėliu iš-
+      - code: 27
+        label: priesagos -inti veiksmažodis su prefiksu išsi-
+      - code: 28
+        label: priesagos -inti veiksmažodis su priešdėliu į-
+      - code: 29
+        label: priesagos -inti veiksmažodis su prefiksu įsi-
+      - code: 30
+        label: priesagos -inti veiksmažodis su priešdėliu ne-
+      - code: 31
+        label: priesagos -inti veiksmažodis su priešdėliu nu-
+      - code: 32
+        label: priesagos -inti veiksmažodis su prefiksu nusi-
+      - code: 33
+        label: priesagos -inti veiksmažodis su priešdėliu pa-
+      - code: 34
+        label: priesagos -inti veiksmažodis su priešdėliu par-
+      - code: 35
+        label: priesagos -inti veiksmažodis su prefiksu pasi-
+      - code: 36
+        label: priesagos -inti veiksmažodis su priešdėliu per-
+      - code: 37
+        label: priesagos -inti veiksmažodis su prefiksu persi-
+      - code: 38
+        label: priesagos -inti veiksmažodis su priešdėliu pra-
+      - code: 39
+        label: priesagos -inti veiksmažodis su prefiksu prasi-
+      - code: 40
+        label: priesagos -inti veiksmažodis su priešdėliu pri-
+      - code: 41
+        label: priesagos -inti veiksmažodis su prefiksu prisi-
+      - code: 42
+        label: priesagos -inti veiksmažodis su priešdėliu su-
+      - code: 43
+        label: priesagos -inti veiksmažodis su prefiksu sune-
+      - code: 44
+        label: priesagos -inti veiksmažodis su prefiksu susi-
+      - code: 45
+        label: priesagos -inti veiksmažodis su priešdėliu už-
+      - code: 46
+        label: priesagos -inti veiksmažodis su prefiksu užsi-
+      - code: 47
+        label: iš nieko nepadarytas veiksmažodis su prefiksu įsi-
+      - code: 48
+        label: iš nieko nepadarytas veiksmažodis su prefiksu nusi-
+      - code: 49
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu par-
+      - code: 50
+        label: iš nieko nepadarytas veiksmažodis su prefiksu pasi-
+      - code: 51
+        label: iš nieko nepadarytas veiksmažodis su prefiksu prisi-
+      - code: 52
+        label: iš nieko nepadarytas veiksmažodis su prefiksu susi-
+      - code: 53
+        label: priesagos -telėti veiksmažodis be prefikso
+      - code: 54
+        label: priesagos -terėti veiksmažodis be prefikso
+      - code: 55
+        label: iš nieko nepadarytas veiksmažodis su prefiksu apsi-
+      - code: 56
+        label: priesagos -(i)oti veiksmažodis be prefikso
+      - code: 57
+        label: priesagos -ėti veiksmažodis be prefikso
+      - code: 58
+        label: priesagos -(i)oti veiksmažodis su priešdėliu ap-
+      - code: 59
+        label: priesagos -ėti veiksmažodis su priešdėliu ap-
+      - code: 60
+        label: priesagos -ėti veiksmažodis su priešdėliu api-
+      - code: 61
+        label: priesagos -(i)oti veiksmažodis su priešdėliu api-
+      - code: 62
+        label: priesagos -(i)oti veiksmažodis su prefiksu apsi-
+      - code: 63
+        label: priesagos -ėti veiksmažodis su priešdėliu at-
+      - code: 64
+        label: priesagos -(i)oti veiksmažodis su priešdėliu ati-
+      - code: 65
+        label: priesagos -(i)oti veiksmažodis su priešdėliu at-
+      - code: 66
+        label: priesagos -ėti veiksmažodis su prefiksu atsi-
+      - code: 67
+        label: priesagos -(i)oti veiksmažodis su prefiksu atsi-
+      - code: 68
+        label: priesagos -ėti veiksmažodis su priešdėliu iš-
+      - code: 69
+        label: priesagos -(i)oti veiksmažodis su priešdėliu iš-
+      - code: 70
+        label: priesagos -(i)oti veiksmažodis su prefiksu išsi-
+      - code: 71
+        label: priesagos -ėti veiksmažodis su prefiksu išsi-
+      - code: 72
+        label: priesagos -ėti veiksmažodis su priešdėliu į-
+      - code: 73
+        label: priesagos -(i)oti veiksmažodis su priešdėliu į-
+      - code: 74
+        label: priesagos -(i)oti veiksmažodis su prefiksu įsi-
+      - code: 75
+        label: priesagos -ėti veiksmažodis su prefiksu įsi-
+      - code: 76
+        label: priesagos -ėti veiksmažodis su priešdėliu nu-
+      - code: 77
+        label: priesagos -(i)oti veiksmažodis su priešdėliu nu-
+      - code: 78
+        label: priesagos -(i)oti veiksmažodis su prefiksu nusi-
+      - code: 79
+        label: priesagos -ėti veiksmažodis su prefiksu nusi-
+      - code: 80
+        label: priesagos -ėti veiksmažodis su priešdėliu pa-
+      - code: 81
+        label: priesagos -(i)oti veiksmažodis su priešdėliu pa-
+      - code: 82
+        label: priesagos -(i)oti veiksmažodis su priešdėliu par-
+      - code: 83
+        label: priesagos -(i)oti veiksmažodis su prefiksu pasi-
+      - code: 84
+        label: priesagos -ėti veiksmažodis su prefiksu pasi-
+      - code: 85
+        label: priesagos -ėti veiksmažodis su priešdėliu per-
+      - code: 86
+        label: priesagos -(i)oti veiksmažodis su priešdėliu per-
+      - code: 87
+        label: priesagos -ėti veiksmažodis su priešdėliu pra-
+      - code: 88
+        label: priesagos -(i)oti veiksmažodis su priešdėliu pra-
+      - code: 89
+        label: priesagos -ėti veiksmažodis su prefiksu prasi-
+      - code: 90
+        label: priesagos -(i)oti veiksmažodis su prefiksu prasi-
+      - code: 91
+        label: priesagos -ėti veiksmažodis su priešdėliu pri-
+      - code: 92
+        label: priesagos -(i)oti veiksmažodis su priešdėliu pri-
+      - code: 93
+        label: priesagos -ėti veiksmažodis su prefiksu prisi-
+      - code: 94
+        label: priesagos -(i)oti veiksmažodis su prefiksu prisi-
+      - code: 95
+        label: priesagos -ėti veiksmažodis su priešdėliu su-
+      - code: 96
+        label: priesagos -(i)oti veiksmažodis su priešdėliu su-
+      - code: 97
+        label: priesagos -ėti veiksmažodis su prefiksu sune-
+      - code: 98
+        label: priesagos -(i)oti veiksmažodis su prefiksu susi-
+      - code: 99
+        label: priesagos -ėti veiksmažodis su prefiksu susi-
+      - code: 100
+        label: priesagos -ėti veiksmažodis su priešdėliu už-
+      - code: 101
+        label: priesagos -(i)oti veiksmažodis su priešdėliu už-
+      - code: 102
+        label: priesagos -(i)oti veiksmažodis su prefiksu užsi-
+      - code: 103
+        label: priesagos -ėti veiksmažodis su prefiksu užsi-
+      - code: 104
+        label: priesagos -(i)oti veiksmažodis su priešdėliu ne-
+      - code: 105
+        label: priesagos -(i)oti veiksmažodis su prefiksu persi-
+      - code: 106
+        label: iš nieko nepadarytas veiksmažodis su priešdėliu ne-
+      - code: 107
+        label: iš nieko nepadarytas veiksmažodis su prefiksu sune-
+      - code: 108
+        label: iš nieko nepadarytas veiksmažodis su prefiksu neapsi-
+      - code: 109
+        label: priesagos -yti veiksmažodis be prefikso
+      - code: 110
+        label: priesagos -yti veiksmažodis su priešdėliu ap-
+      - code: 111
+        label: priesagos -yti veiksmažodis su priešdėliu api-
+      - code: 112
+        label: priesagos -yti veiksmažodis su priešdėliu ati-
+      - code: 113
+        label: priesagos -yti veiksmažodis su priešdėliu iš-
+      - code: 114
+        label: priesagos -yti veiksmažodis su prefiksu išsi-
+      - code: 115
+        label: priesagos -yti veiksmažodis su prefiksu įsi-
+      - code: 116
+        label: priesagos -yti veiksmažodis su priešdėliu į-
+      - code: 117
+        label: priesagos -yti veiksmažodis su priešdėliu nu-
+      - code: 118
+        label: priesagos -yti veiksmažodis su priešdėliu pa-
+      - code: 119
+        label: priesagos -yti veiksmažodis su prefiksu pasi-
+      - code: 120
+        label: priesagos -yti veiksmažodis su priešdėliu per-
+      - code: 121
+        label: priesagos -yti veiksmažodis su priešdėliu pri-
+      - code: 122
+        label: priesagos -yti veiksmažodis su prefiksu prisi-
+      - code: 123
+        label: priesagos -yti veiksmažodis su priešdėliu su-
+      - code: 124
+        label: priesagos -yti veiksmažodis su prefiksu susi-
+      - code: 125
+        label: priesagos -yti veiksmažodis su priešdėliu už-
+      - code: 126
+        label: priesagos -yti veiksmažodis su prefiksu užsi-
+      - code: 127
+        label: priesagos -yti veiksmažodis su priešdėliu at-
+      - code: 128
+        label: priesagos -yti veiksmažodis su prefiksu persi-
+      - code: 129
+        label: priesagos -yti veiksmažodis su priešdėliu pra-
+      - code: 130
+        label: priesagos -yti veiksmažodis su prefiksu prasi-
+      - code: 131
+        label: iš nieko nepadarytas veiksmažodis su prefiksu parsi-
+      - code: 132
+        label: priesagos -(i)uoti veiksmažodis be prefikso
+      - code: 133
+        label: priesagos -enti veiksmažodis be prefikso
+      - code: 134
+        label: priesagos -enti veiksmažodis su priešdėliu ap-
+      - code: 135
+        label: priesagos -enti veiksmažodis su priešdėliu at-
+      - code: 136
+        label: priesagos -enti veiksmažodis su priešdėliu ati-
+      - code: 137
+        label: priesagos -enti veiksmažodis su priešdėliu iš-
+      - code: 138
+        label: priesagos -enti veiksmažodis su priešdėliu į-
+      - code: 139
+        label: priesagos -enti veiksmažodis su prefiksu įsi-
+      - code: 140
+        label: kt. priesagos veiksmažodis be prefikso
+      - code: 141
+        label: priesagos -enti veiksmažodis su priešdėliu nu-
+      - code: 142
+        label: priesagos -enti veiksmažodis su prefiksu nusi-
+      - code: 143
+        label: priesagos -enti veiksmažodis su priešdėliu pa-
+      - code: 144
+        label: priesagos -enti veiksmažodis su priešdėliu par-
+      - code: 145
+        label: priesagos -enti veiksmažodis su priešdėliu per-
+      - code: 146
+        label: priesagos -enti veiksmažodis su priešdėliu pra-
+      - code: 147
+        label: priesagos -enti veiksmažodis su prefiksu prasi-
+      - code: 148
+        label: priesagos -enti veiksmažodis su priešdėliu pri-
+      - code: 149
+        label: priesagos -enti veiksmažodis su priešdėliu su-
+      - code: 150
+        label: kt. priesagos veiksmažodis su priešdėliu su-
+      - code: 151
+        label: priesagos -enti veiksmažodis su prefiksu susi-
+      - code: 152
+        label: priesagos -enti veiksmažodis su priešdėliu už-
+      - code: 153
+        label: kt. priesagos veiksmažodis su priešdėliu už-
+      - code: 154
+        label: priesagos -enti veiksmažodis su prefiksu užsi-
+      - code: 155
+        label: priesagos -enti veiksmažodis su prefiksu pasi-
+      - code: 156
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu ap-
+      - code: 157
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu api-
+      - code: 158
+        label: priesagos -(i)uoti veiksmažodis su prefiksu apsi-
+      - code: 159
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu at-
+      - code: 160
+        label: priesagos -(i)uoti veiksmažodis su prefiksu atsi-
+      - code: 161
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu iš-
+      - code: 162
+        label: priesagos -(i)uoti veiksmažodis su prefiksu išsi-
+      - code: 163
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu į-
+      - code: 164
+        label: priesagos -(i)uoti veiksmažodis su prefiksu įsi-
+      - code: 165
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu ne-
+      - code: 166
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu nu-
+      - code: 167
+        label: priesagos -(i)uoti veiksmažodis su prefiksu nusi-
+      - code: 168
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu pa-
+      - code: 169
+        label: priesagos -(i)uoti veiksmažodis su prefiksu pasi-
+      - code: 170
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu per-
+      - code: 171
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu pra-
+      - code: 172
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu pri-
+      - code: 173
+        label: priesagos -(i)uoti veiksmažodis su prefiksu prisi-
+      - code: 174
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu su-
+      - code: 175
+        label: priesagos -(i)uoti veiksmažodis su prefiksu sune-
+      - code: 176
+        label: priesagos -(i)uoti veiksmažodis su prefiksu susi-
+      - code: 177
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu už-
+      - code: 178
+        label: priesagos -(i)uoti veiksmažodis su prefiksu užsi-
+      - code: 179
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu ati-
+      - code: 180
+        label: priesagos -(i)uoti veiksmažodis su priešdėliu par-
+      - code: 181
+        label: iš nieko nepadarytas veiksmažodis su prefiksu nesi-
+      - code: 182
+        label: iš nieko nepadarytas veiksmažodis su prefiksu neap-
+      - code: 183
+        label: priesagos -(i)auti veiksmažodis be prefikso
+      - code: 184
+        label: priesagos -(i)auti veiksmažodis su priešdėliu iš-
+      - code: 185
+        label: priesagos -(i)auti veiksmažodis su priešdėliu nu-
+      - code: 186
+        label: priesagos -(i)auti veiksmažodis su priešdėliu pa-
+      - code: 187
+        label: priesagos -(i)auti veiksmažodis su priešdėliu pra-
+      - code: 188
+        label: priesagos -(i)auti veiksmažodis su priešdėliu pri-
+      - code: 189
+        label: priesagos -(i)auti veiksmažodis su prefiksu prisi-
+      - code: 190
+        label: priesagos -(i)auti veiksmažodis su prefiksu susi-
+      - code: 191
+        label: priesagos -(i)auti veiksmažodis su priešdėliu su-
+      - code: 192
+        label: priesagos -(i)auti veiksmažodis su priešdėliu už-
+      - code: 193
+        label: priesagos -(i)auti veiksmažodis su priešdėliu ap-
+      - code: 194
+        label: priesagos -(i)auti veiksmažodis su priešdėliu at-
+      - code: 195
+        label: priesagos -(i)auti veiksmažodis su priešdėliu ati-
+      - code: 196
+        label: priesagos -(i)auti veiksmažodis su prefiksu išsi-
+      - code: 197
+        label: priesagos -(i)auti veiksmažodis su prefiksu įsi-
+      - code: 198
+        label: priesagos -(i)auti veiksmažodis su priešdėliu ne-
+      - code: 199
+        label: priesagos -(i)auti veiksmažodis su prefiksu nusi-
+      - code: 200
+        label: priesagos -(i)auti veiksmažodis su priešdėliu par-
+      - code: 201
+        label: priesagos -(i)auti veiksmažodis su prefiksu pasi-
+      - code: 202
+        label: priesagos -(i)auti veiksmažodis su priešdėliu per-
+      - code: 203
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis be prefikso
+      - code: 204
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu iš-
+      - code: 205
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu į-
+      - code: 206
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu pri-
+      - code: 207
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu su-
+      - code: 208
+        label: padarytas iš veiksmažodžio priesagos -telėti veiksmažodis be prefikso
+      - code: 209
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu už-
+      - code: 210
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu ap-
+      - code: 211
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu nu-
+      - code: 212
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu pa-
+      - code: 213
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu per-
+      - code: 214
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu at-
+      - code: 215
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu išsi-
+      - code: 216
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu ne-
+      - code: 217
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu api-
+      - code: 218
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu pra-
+      - code: 219
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu nusi-
+      - code: 220
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu pasi-
+      - code: 221
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu atsi-
+      - code: 222
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu susi-
+      - code: 223
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu ati-
+      - code: 224
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su priešdėliu par-
+      - code: 225
+        label: padarytas iš veiksmažodžio priesagos -inėti veiksmažodis su prefiksu apsi-
+      - code: 226
+        label: padarytas iš ištiktuko priesagos -telėti veiksmažodis be prefikso
+- code: 6
+  name: adverb
+  symbol: adv
+  label: Prieveiksmis
+  nodes:
+  - label: Kaitybos charakteristika
+    nodes:
+    - code: 4
+      label: Laipsniavimas, 
+      nodes:
+      - code: 0
+        label: >
+          Laipsnio formų neturi (=galima traktuoti, kad laipsnio kategorija jam
+          neturi prasmės), pvz.: greta
+      - code: 1
+        label: >
+          Yra nelyginamojo laipsnio; turi nelyg., aukštesn., aukštėlsesn. ir
+          aukščiaus. laipsnius, pvz.: daug
+      - code: 2
+        label: >
+          Yra aukštesniojo laipsnio; turi nelyg., aukštesn., aukštėlsesn. ir
+          aukščiaus. laipsnius, pvz.: daugiau
+      - code: 3
+        label: >
+          Yra aukštėlesniojo laipsnio; turi nelyg., aukštesn., aukštėlsesn. ir
+          aukščiaus. laipsnius, pvz.: tolėliau
+      - code: 4
+        label: >
+          Yra aukštesniojo laipsnio; turi aukštesn., aukštėlsesn. ir aukščiaus.
+          laipsnius (be nelyg.), pvz.: įšiauriau
+      - code: 5
+        label: >
+          Yra aukštėlesniojo laipsnio; turi aukštesn., aukštėlsesn. ir
+          aukščiaus. laipsnius (be nelyg.), pvz.: kalnėliau
+      - code: 6
+        label: >
+          Yra aukščiausiojo laipsnio; turi aukštesn., aukštėlsesn. ir
+          aukščiaus. laipsnius (be nelyg.), pvz.: apačiausiai
+      - code: 7
+        label: >
+          Yra aukščiausiojo laipsnio; kitų laipsnių neturi, pvz.: galiausiai
+  - code: 5
+    label: Darybos charakteristika
+    nodes:
+    - code: 0
+      label: >
+        bepref, be ypatingo galo; apie padarymo būdą nieko pasakyti negalim;
+        pvz.: daug
+    - code: 1
+      label: >
+        bepref,  aukštesniojo l. prv. iš atitinkamo žemesnio l. prieveiksmio,
+        su priesaga -iau; pvz.: daugiau
+    - code: 2
+      label: >
+        su ne- ir be ypatingo galo; pvz.: nedaug
+    - code: 3
+      label: >
+        su ne-, baigiasi -i; pvz.: netoli
+    - code: 4
+      label: >
+        bepref, aukštėlesn. l. prv. iš atitinkamo žemesnio l. prieveiksmio, su
+        priesaga -ėliau; pvz.: tolėliau
+    - code: 5
+      label: >
+        bepref, baigiasi -i; pvz.: toli
+    - code: 6
+      label: >
+        bepref, baigiasi -(i)ui; pvz.: paskui
+    - code: 7
+      label: >
+        aukštesniojo l. prv. iš kažko (gal iš dktv, gal iš ko kito), su
+        priesaga -iau; pvz.: įšiauriau
+    - code: 8
+      label: >
+        bepref, aukščiaus. l. prv. iš atitinkamo žemesnio l. prieveiksmio, su
+        priesaga -iausiai; pvz.: apačiausiai
+    - code: 9
+      label: >
+        bepref, baigiasi -(i)a; pvz.: greta, šalia
+    - code: 10
+      label: >
+        su ne-, baigiasi -(i)a; pvz.: negana
+    - code: 11
+      label: >
+        bepref, baigiasi -e; pvz.: apytekine
+    - code: 12
+      label: >
+        bepref, baigiasi -iai; pvz.: tiesiogiai
+    - code: 13
+      label: >
+        bepref, baigiasi -ei; pvz.: ikšiolei
+    - code: 14
+      label: >
+        bepref, baigiasi -(i)ui; pvz.: aplinkui
+    - code: 15
+      label: >
+        su ne-, baigiasi -am; pvz.: neilgam
+    - code: 16
+      label: >
+        bepref, baigiasi -am; pvz.: ilgam
+    - code: 17
+      label: >
+        bepref, baigiasi -(i)o; pvz.: kaipo,  tolydžio
+    - code: 18
+      label: >
+        bepref, baigiasi -(i)ais; pvz.: juokais, priešpriešiais
+    - code: 19
+      label: >
+        su ne-, baigiasi -(i)ais; pvz.: nejuokais
+    - code: 20
+      label: >
+        bepref, baigiasi -(i)omis; pvz.: aklomis,  užkuriomis
+    - code: 21
+      label: >
+        su ne-, baigiasi -(i)omis; pvz.: nemačiomis
+    - code: 22
+      label: >
+        bepref, baigiasi -(i)os; pvz.: kitados,  atgalios
+    - code: 23
+      label: >
+        bepref, baigiasi -us; pvz.: abipus
+    - code: 24
+      label: >
+        su ne-, baigiasi -us; pvz.: netrukus
+    - code: 25
+      label: >
+        bepref, baigiasi -(i)ant; pvz.: bematant
+    - code: 26
+      label: >
+        su ne-, baigiasi -(i)ant; pvz.: nepaisant,  nedelsiant
+    - code: 27
+      label: >
+        bepref, baigiasi -int; pvz.: beregint
+    - code: 28
+      label: >
+        bepref, baigiasi -(i)u; pvz.: atstu,  apyryčiu
+    - code: 29
+      label: >
+        su ne-, baigiasi -(i)u; pvz.: nelygu
+    - code: 30
+      label: >
+        bepref, baigiasi -(i)uoju; pvz.: piktuoju,  gražiuoju
+    - code: 31
+      label: >
+        su be- ir be ypatingo galo; pvz.: bereik
+    - code: 32
+      label: >
+        bepref, iš dktv su -iškai; pvz.: daržiškai
+    - code: 33
+      label: >
+        bepref, iš dktv su -ingai; pvz.: vaidingai
+    - code: 34
+      label: >
+        su ne-, iš dktv su -ingai; pvz.: neturtingai
+    - code: 35
+      label: >
+        bepref, iš dktv su -(i)uotai; pvz.: tarpuotai
+    - code: 36
+      label: >
+        su be-, iš dktv su -iškai; pvz.: bedieviškai
+    - code: 37
+      label: >
+        bepref, iš dktv su -ietiškai; pvz.: suvalkietiškai
+    - code: 38
+      label: >
+        bepref, iš dktv su -ėtai; pvz.: eglėtai
+    - code: 39
+      label: >
+        bepref, iš dktv su -otai; pvz.: miglotai
+    - code: 40
+      label: >
+        su ne-, iš dktv su -iškai; pvz.: nemokšiškai
+    - code: 41
+      label: >
+        bepref, iš bdv, su -(i)ai; pvz.: akylai,  dideliai
+    - code: 42
+      label: >
+        iš bdv su apy- ir su -iai; pvz.: apydažniai
+    - code: 43
+      label: >
+        su be-, iš bdv su -(i)ai; pvz.: bereikalingai
+    - code: 44
+      label: >
+        bepref, iš bdv su -yn; pvz.: blogyn
+    - code: 45
+      label: >
+        bepref, iš bdv su -okai; pvz.: dažnokai
+    - code: 46
+      label: >
+        su ne-, iš bdv su -(i)ai; pvz.: nedorai
+    - code: 47
+      label: >
+        bepref, aukštesniojo l. prv. iš bdv, su priesaga ‑iau; pvz.: žemiau
+    - code: 48
+      label: >
+        su a-, iš bdv su -(i)ai; pvz.: amoraliai
+    - code: 49
+      label: >
+        iš bdv su po- ir su -iai; pvz.: pogiliai
+    - code: 50
+      label: >
+        bepref, iš bdv dalyvino ar daiktavardinio, su ‑imai; pvz.: įtikimai
+    - code: 51
+      label: >
+        su ne-, iš bdv dalyvino ar daiktavardinio, su ‑imai; pvz.: neįtikimai
+    - code: 52
+      label: >
+        bepref, iš bdv dalyvino ar daiktavardinio, su ‑tinai; pvz.: galutinai
+    - code: 53
+      label: >
+        bepref,  iš bdv, su -iškai; pvz.: savitarpiškai
+    - code: 54
+      label: >
+        bepref,  aukščiaus. l. prv., iš bdv, su priesaga ‑iausiai; pvz.:
+        galiausiai
+    - code: 55
+      label: >
+        bepref, iš sktv su -yn; pvz.: pirmyn
+    - code: 56
+      label: >
+        bepref, iš sktv su -(i)aip; pvz.: vienaip
+    - code: 57
+      label: >
+        bepref, iš sktv su -(i)opai; pvz.: vieneriopai
+    - code: 58
+      label: >
+        bepref, iš sktv su -ok; pvz.: vienok
+    - code: 59
+      label: >
+        bepref, iš sktv su -ok(i)ai; pvz.: vienokai
+    - code: 60
+      label: >
+        bepref, iš sktv su -ur; pvz.: antrur
+    - code: 61
+      label: >
+        bepref, iš sktv su -i(e)se; pvz.: dviese
+    - code: 62
+      label: >
+        bepref, iš sktv su -gubai; pvz.: dvigubai
+    - code: 63
+      label: >
+        bepref, iš sktv su -linkai; pvz.: dvilinkai
+    - code: 64
+      label: >
+        bepref, iš įvrd su -ur; pvz.: ničniekur
+    - code: 65
+      label: >
+        bepref, iš įvrd su -(i)aip; pvz.: niekaip
+    - code: 66
+      label: >
+        bepref, iš įvrd su -ai; pvz.: jūsiškai
+    - code: 67
+      label: >
+        bepref, iš įvrd su -iopai; pvz.: keleriopai
+    - code: 68
+      label: >
+        bepref, iš įvrd su -gubai; pvz.: keliagubai
+    - code: 69
+      label: >
+        bepref, iš įvrd su -iese; pvz.: keliese
+    - code: 70
+      label: >
+        bepref, iš vksm.bndr. su -tinai; pvz.: dirbtinai
+    - code: 71
+      label: >
+        su nepa- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: nepajudinamai,
+        nepabaigiamai
+    - code: 72
+      label: >
+        su pa- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: patenkinamai
+    - code: 73
+      label: >
+        su su- iš vksm.bndr. su -tinai; pvz.: sutartinai
+    - code: 74
+      label: >
+        bepref, iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: tariamai
+    - code: 75
+      label: >
+        su ne- iš vksm.bndr. su -tinai; pvz.: nedovanotinai
+    - code: 76
+      label: >
+        su pa- iš vksm.bndr. su -tinai; pvz.: pakartotinai
+    - code: 77
+      label: >
+        su pasi- iš vksm.bndr. su -tinai; pvz.: pasibaisėtinai
+    - code: 78
+      label: >
+        su nenu- nenuginčijamai iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.:
+        nenukrypstamai
+    - code: 79
+      label: >
+        su išsi- iš vksm.bndr. su -tinai; pvz.: išsimokėtinai
+    - code: 80
+      label: >
+        su ne- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: nemokamai
+    - code: 81
+      label: >
+        su pri- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: prideramai
+    - code: 82
+      label: >
+        su pri- iš vksm.veik.r.es.l.dlv. su -(i)ančiai; pvz.: priderančiai
+    - code: 83
+      label: >
+        su atsi- iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: atsidėjusiai
+    - code: 84
+      label: >
+        su iš- iš vksm.neveik.r.es.l.dlv. su -imai; pvz.: ištikimai
+    - code: 85
+      label: >
+        su nepa- iš vksm.neveik.r.es.l.dlv. su -imai; pvz.: nepatikimai
+    - code: 86
+      label: >
+        su ne- iš vksm.neveik.r.būt.l.dlv. su -tai; pvz.: netikėtai
+    - code: 87
+      label: >
+        su pasi- iš vksm.neveik.r.es.l.dlv. su -imai; pvz.: pasiturimai
+    - code: 88
+      label: >
+        su pasi- iš vksm.veik.r.es.l.dlv. su -inčiai; pvz.: pasiturinčiai
+    - code: 89
+      label: >
+        su pa- iš vksm.neveik.r.es.l.dlv. su -imai; pvz.: pastebimai
+    - code: 90
+      label: >
+        bepref, iš vksm.neveik.r.es.l.dlv. su -imai; pvz.: regimai
+    - code: 91
+      label: >
+        su pri- iš vksm.bndr. su -tinai; pvz.: primygtinai
+    - code: 92
+      label: >
+        su neiš- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: neišvengiamai
+    - code: 93
+      label: >
+        su nepri- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: neprieinamai
+    - code: 94
+      label: >
+        su at- iš vksm.veik.r.es.l.dlv. su -(i)ančiai; pvz.: atsakančiai
+    - code: 95
+      label: >
+        su į- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: įmanomai
+    - code: 96
+      label: >
+        su neap- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: neapsakomai
+    - code: 97
+      label: >
+        su neati- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: neatitaisomai
+    - code: 98
+      label: >
+        su nepa- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: nepamainomai
+    - code: 99
+      label: >
+        su nepri- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: nepriklausomai
+    - code: 100
+      label: >
+        su nesu- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: nesulaikomai
+    - code: 101
+      label: >
+        su ne- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: nevaržomai
+    - code: 102
+      label: >
+        su neiš- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: neišdildomai
+    - code: 103
+      label: >
+        su pa- iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: papildomai
+    - code: 104
+      label: >
+        su į- iš vksm.bndr. su -tinai; pvz.: įskaitytinai
+    - code: 105
+      label: >
+        bepref, iš vksm.neveik.r.es.l.dlv. su -omai; pvz.: matomai
+    - code: 106
+      label: >
+        bepref, iš vksm.neveik.r.būt.l.dlv. su -tyn; pvz.: lenktyn
+    - code: 107
+      label: >
+        su ati- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: atitinkamai
+    - code: 108
+      label: >
+        su atsi- iš vksm.bndr. su -tinai; pvz.: atsitiktinai
+    - code: 109
+      label: >
+        su ne- iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: netikusiai
+    - code: 110
+      label: >
+        su pa- iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: patrakusiai
+    - code: 111
+      label: >
+        su per- iš vksm.bndr. su -tinai; pvz.: pertektinai
+    - code: 112
+      label: >
+        su už- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: užtenkamai
+    - code: 113
+      label: >
+        su ne- iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: nevykusiai
+    - code: 114
+      label: >
+        bepref, iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: vykusiai
+    - code: 115
+      label: >
+        su iš- iš vksm.bndr. su -tinai; pvz.: išpirktinai
+    - code: 116
+      label: >
+        su at- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: atmenamai
+    - code: 117
+      label: >
+        su at- iš vksm.bndr. su -tinai; pvz.: atmintinai
+    - code: 118
+      label: >
+        su neįsi- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.:
+        neįsivaizduojamai
+    - code: 119
+      label: >
+        su į- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: įskiriamai
+    - code: 120
+      label: >
+        su neper- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: neperskiriamai
+    - code: 121
+      label: >
+        su su- iš vksm.neveik.r.es.l.dlv. su -(i)amai; pvz.: suprantamai
+    - code: 122
+      label: >
+        su į- iš vksm.būt.l.pdlv. su -(i)usiai; pvz.: įniršusiai
+  - label: Derivacijos charakteristika
+    nodes:
+    - code: 6
+      label: Prefiksavimas
+      nodes:
+      - code: 0
+        label: >
+          bepref; su prefiksais formų neįgyja ; pvz.: paskui
+      - code: 1
+        label: >
+          bepref; galimos formos su ne-, nebe-, tebene- ir pan. ; pvz.: daug
+      - code: 2
+        label: >
+          su ne-; įmanomi atitinkami neneigiami prv (be ne-); įmanomi
+          atitinkami neigiami prv su (nebe-, tebene-) ir pan. ; pvz.: nedaug,
+          neabejotinai, nemokamai
+      - code: 3
+        label: >
+          su ne-; neneigiamų prv (be ne-) nėra (arba yra, bet ne ta
+          "supreveiksmėjusia" prasme); įmanomi atitinkami neigiami prv su
+          (nebe-, tebene-) ir pan. ; pvz.: negirdom, nedovanotinai
+      - code: 4
+        label: >
+          su be-; prv be be- nėra; su ne-, nebe-, ir pan. nėra ; pvz.: bereik
+      - code: 5
+        label: >
+          su be-; yra ir forma be be-; galimos formos su ne-, nebe-, ir pan.;
+          pvz.: bedieviškai, bereikalingai
+      - code: 6
+        label: >
+          su be-; prv be be- nėra; galimos formos su ne-, nebe-, ir pan.; pvz.:
+          bejėgiškai, beskoniškai
+      - code: 7
+        label: >
+          su apy-; su ne-, nebe-, ir pan. nėra; yra atitinkamas prv iš bdv su
+          ‑(i)ai be apy-; pvz.: apydažniai
+      - code: 8
+        label: >
+          su a-; yra ir forma be a-; galimos formos su ne-, nebe-, ir pan. ;
+          pvz.: amoraliai
+      - code: 9
+        label: >
+          su po-; su ne-, nebe-, ir pan. nėra; yra atitinkamas prv iš bdv su
+          ‑(i)ai be po-; pvz.: pogiliai
+      - code: 10
+        label: >
+          su ne- + priešd.; neneigiamų prv su šiuo priešd (be ne-) nėra (arba
+          yra, bet ne ta "supreveiksmėjusia" prasme); įmanomi atitinkami prv su
+          (nebe-, tebene- ir pan.) + šitas priešd. ; pvz.: nepajudinamai
+      - code: 11
+        label: >
+          su priešd; įmanomi atitinkami neigiami prv su (ne-, nebe-, tebene‑) +
+          šitas priešd. ir pan. ; pvz.: patenkinamai
+      - code: 12
+        label: >
+          su priešd + si-; įmanomi atitinkami neigiami prv su (ne-, nebe-,
+          tebene- ir pan.) + šitas priešd ir si- ; pvz.: pasibaisėtinai
+      - code: 13
+        label: >
+          su ne- + priešd; įmanomi neneigiami prv su šiuo priešd (be ne-);
+          įmanomi atitinkami prv su (nebe-, tebene- ir pan.) + šitas priešd. ;
+          pvz.: nenukrypstamai
+      - code: 14
+        label: >
+          su ne- + priešd + si-; neneigiamų prv su šiuo priešd (be ne-) nėra
+          (arba yra, bet ne ta "supreveiksmėjusia" prasme); įmanomi atitinkami
+          prv su (nebe-, tebene-) + šitas priešd.+si ir pan.; pvz.:
+          neįsivaizduojamai
+- code: 7
+  name: particle
+  label: Dalelytė
+  nodes:
+  - code: 4
+    label: Darybos charakteristika
+    nodes:
+    - code: 1
+      label: >
+        be ne-; pvz.: ag
+    - code: 2
+      label: >
+        su ne-; pvz.: nejau, nelyg
+- code: 8
+  name: preposition
+  symbol: pr
+  label: Prielinksnis
+  nodes:
+  - code: 4
+    label: Prielinksnio ypatumai
+    nodes:
+    - code: 1
+      label: >
+        reikalauja kilmininko, polinksniu nebūna; pvz.: ant
+    - code: 2
+      label: >
+        reikalauja galininko, polinksniu nebūna; pvz.: aplink
+    - code: 3
+      label: >
+        reikalauja kilmininko, gali būti polinksniu; pvz.: dėka
+    - code: 4
+      label: >
+        reikalauja K arba G, polinksniu nebūna; pvz.: apsukui
+    - code: 5
+      label: >
+        reikalauja K, G arba Įn, polinksniu nebūna; pvz.: po
+    - code: 6
+      label: >
+        reikalauja naudininko, polinksniu nebūna; pvz.: priešingai
+    - code: 7
+      label: >
+        reikalauja įnagininko, polinksniu nebūna; pvz.: su
+  - code: 5
+    label: Darybos charakteristika
+    nodes:
+    - code: 0
+      label: >
+        Apie prielinksnio padarymą nieko pasakyti negalim (šiame darbo etape to
+        dar nenagrinėjome); pvz.: abipus, anot
+    - code: 1
+      label: >
+        Prielinksnis su ne-; pvz.: nepaisant, netoli
+- code: 9
+  name: conjungtion
+  symbol: cnjcoo
+  label: Jungtukas
+  nodes:
+  - code: 4
+    label: Darybos charakteristika
+    nodes:
+    - code: 0
+      label: >
+        Apie jungtuko padarymą nieko pasakyti negalim (šiame darbo etape to dar
+        nenagrinėjome); pvz.: ar, betgi, būtent
+    - code: 1
+      label: >
+        Jungtukas su ne-; pvz.: nekaip, nelyg
+- code: 10
+  name: interjection
+  symbol: ij
+  label: Jaustukas
+  nodes:
+  - name: interjection
+    nodes:
+    - name: interjection
+- code: 11
+  name: verbal-interjection
+  label: Ištiktukas
+  nodes:
+  - code: 4
+    label: Derivacijos charakteristika
+    nodes:
+    - code: 0
+      label: >
+        Veiksmažodinių derivacijų su -tel-,-ter- ir pan. neturi; pvz.: cha
+    - code: 1
+      label: >
+        Turi veiksmažodines derivacijas su -tel-, -ter- ir pan.; derivuojant
+        -tel-, -ter- pridedami prie ištiktuko galo; pvz.: paukš
+    - code: 2
+      label: >
+        Turi derivacijas su -tel-, -ter- ir pan.; derivuojant, ištiktuko galo t
+        susilieja su -tel-, -ter-; pvz.: braukšt
